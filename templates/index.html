@@ -9,22 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <!-- Navigation Menu -->
     <nav>
-        <div class="logo">
+        <a href="index.html" class="logo">
             <img src="../static/assets/logo.svg" alt="TeddyBearClinic Logo">
-        </div>
+        </a>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        
         <ul class="nav-links">
             <li class="dropdown">
-                <a href="#" id="">About</a>
+                <a href="#">About</a>
                 <div class="dropdown-menu">
-                    <a href="#">Our Story</a>
-                    <a href="#">Mission & Vision</a>
-                    <a href="#">Our Team</a>
-                    <a href="#">Contact Us</a>
+                    <a href="our-story.html">Our Story</a>
+                    <a href="mission-vision.html">Mission & Vision</a>
+                    <a href="our-team.html">Our Team</a>
+                    <a href="contact.html">Contact Us</a>
                 </div>
             </li>
             <li class="dropdown">
@@ -62,7 +69,27 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
+            <p class="hero-tagline">Academy of Education and Learning • MCST</p>
             <h1>Teddy Bear Clinic</h1>
+            <p class="hero-subtitle">Fostering children's well-being, safety, and community connections through interactive, comforting, and playful educational experiences with first responders and healthcare professionals.</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">250+</span>
+                    <p class="hero-stat-label">Children Helped</p>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">Morris County</span>
+                    <p class="hero-stat-label">Community Focus</p>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">2026</span>
+                    <p class="hero-stat-label">Next Event</p>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="https://mcvts.jumbula.com/TeddyBearClinic2026/TeddyBearClinic2026" class="btn" target="_blank">Register Now</a>
+                <button class="btn btn-outline">Learn More</button>
+            </div>
         </div>
     </section>
 
@@ -72,16 +99,16 @@
             <h2>Upcoming Event</h2>
             <div class="event-card">
                 <div class="event-calendar">
-                    <span class="event-month">JAN</span>
-                    <span class="event-day">25</span>
-                    <span class="event-year">2025</span>
+                    <span class="event-month">MAY</span>
+                    <span class="event-day">3</span>
+                    <span class="event-year">2026</span>
                 </div>
                 <div class="event-details">
-                    <h3>Annual Teddy Bear Clinic Day</h3>
-                    <p class="event-time">🕐 10:00 AM - 4:00 PM</p>
-                    <p class="event-location">📍 Community Health Center</p>
-                    <p class="event-description">Join us for a fun-filled day where children can bring their stuffed animals for check-ups and learn about healthcare in a friendly environment.</p>
-                    <button class="btn">Register Now</button>
+                    <h3>Teddy Bear Clinic 2026</h3>
+                    <p class="event-time"><i class="fa-regular fa-clock"></i> 10:00 AM - 1:00 PM</p>
+                    <p class="event-location"><i class="fa-solid fa-location-dot"></i> Morris County School of Technology</p>
+                    <p class="event-description">Join us for an interactive day where children can bring their stuffed animals for check-ups, engage with first responders and healthcare professionals, and learn about health, wellness, and safety in a fun, comforting environment.</p>
+                    <a href="https://mcvts.jumbula.com/TeddyBearClinic2026/TeddyBearClinic2026" class="btn" target="_blank">Register Now</a>
                 </div>
             </div>
         </div>

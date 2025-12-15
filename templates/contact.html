@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - TeddyBearClinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="../static/assets/logo.svg" alt="TeddyBearClinic Logo">
+        </a>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#">About</a>
+                <div class="dropdown-menu">
+                    <a href="our-story.html">Our Story</a>
+                    <a href="mission-vision.html">Mission & Vision</a>
+                    <a href="our-team.html">Our Team</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="events.html">Events</a>
+                <div class="dropdown-menu">
+                    <a href="events.html#upcoming">Upcoming Events</a>
+                    <a href="events.html#past">Past Events</a>
+                    <a href="events.html#calendar">Event Calendar</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Programs</a>
+                <div class="dropdown-menu">
+                    <a href="#">Youth Programs</a>
+                    <a href="#">Community Outreach</a>
+                    <a href="#">Workshops</a>
+                    <a href="#">Resources</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Get Involved</a>
+                <div class="dropdown-menu">
+                    <a href="partnerships.html">Partner With Us</a>
+                    <a href="donations.html">Donate</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="merchandise.html">Merchandise</a>
+                </div>
+            </li>
+        </ul>
+        <div class="btns">
+            <a href="register.html"><button class="btn">Register</button></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero hero-small">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p class="hero-subtitle">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Morris County School of Technology</p>
+                                <p>400 E Main St</p>
+                                <p>Denville, NJ 07834</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>Contact us via Instagram DM</p>
+                                <p>@theteddybearclinic</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-school"></i></div>
+                            <div class="contact-text">
+                                <h4>Academy</h4>
+                                <p>Academy of Education and Learning</p>
+                                <p>MCST • MCVTS</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
+                            <div class="contact-text">
+                                <h4>Website</h4>
+                                <p>theteddybearclinic.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/theteddybearclinic/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="events">Events & Programs</option>
+                                <option value="volunteer">Volunteering</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="donations">Donations</option>
+                                <option value="media">Media & Press</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4 class="faq-question">How can I register my child for an event?</h4>
+                    <p class="faq-answer">You can register for Teddy Bear Clinic 2026 through our official registration page. Visit the Events section or click the Register button to sign up for upcoming events.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">What is the Teddy Bear Clinic?</h4>
+                    <p class="faq-answer">The Teddy Bear Clinic is an interactive community event that brings together local organizations—including police, fire, EMS, and hospitals—to educate children and families while connecting them to important community resources.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">How can I start a Teddy Bear Clinic chapter at my school?</h4>
+                    <p class="faq-answer">Starting a chapter is more than an event—it's a movement! DM us on Instagram @theteddybearclinic with any questions or if you want to learn more about bringing TBC to your community.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Where is the event held?</h4>
+                    <p class="faq-answer">Our main event is held at Morris County School of Technology (MCST) in Denville, NJ. We welcome children from across Morris County and beyond!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.5433333576693!2d-74.48401981436406!3d40.87891949754601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c309e963fda6d3%3A0x1857e776c260c856!2sMorris%20County%20School%20of%20Technology!5e1!3m2!1sen!2sus!4v1765775956425!5m2!1sen!2sus" width="100%" height="450" style="border:0; border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Teddy Bear Clinic</h4>
+                    <p>An interactive community event easing children's fears around healthcare and emergency services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="our-story.html">Our Story</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="partnerships.html">Partnerships</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="donations.html">Donate</a></li>
+                        <li><a href="merchandise.html">Merchandise</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> MCST, Denville, NJ</p>
+                    <p><i class="fa-brands fa-instagram"></i> @theteddybearclinic</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Teddy Bear Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>
