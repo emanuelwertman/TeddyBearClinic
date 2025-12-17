@@ -45,7 +45,7 @@ body {
 .event-time i,
 .event-location i {
     margin-right: 0.5rem;
-    color: var(--secondary);
+    color: #5c7a5c;
 }
 
 .footer-section p i {
@@ -376,12 +376,21 @@ nav {
 /* ===== PAGE ACCENT COLORS (excludes navbar) ===== */
 
 /* Home page - Earthy/Natural accents */
+.page-home nav { background: #fdf6e3; border-bottom-color: rgba(74, 124, 89, 0.2); box-shadow: 0 4px 20px rgba(74, 124, 89, 0.08); }
+.page-home .nav-links li > a { color: #3d5c44; }
+.page-home .nav-links li > a:hover { color: #4a7c59; }
+.page-home .dropdown-menu { background: #fdf6e3; border-color: #4a7c59; }
+.page-home .dropdown-menu a { color: #3d5c44; }
+.page-home .dropdown-menu a:hover { background: linear-gradient(90deg, rgba(74, 124, 89, 0.2), rgba(129, 176, 139, 0.3)); color: #4a7c59; }
+.page-home .dropdown > a::after { border-top-color: #4a7c59; }
+.page-home .btns .btn { background: #4a7c59; color: #ffffff; }
+.page-home .btns .btn:hover { background: #5c7a5c; }
 .page-home .section-title { color: #4a7c59; }
 .page-home .section-title::after { background: linear-gradient(90deg, #8fbcb5, #4a7c59); }
 .page-home .story-text h3 { color: #5c7a5c; }
 .page-home .story-text p { color: #3d5c44; }
-.page-home .btn:not(nav .btn):not(.btn-outline) { background: #4a7c59; }
-.page-home .btn:not(nav .btn):not(.btn-outline):hover { background: #5c7a5c; }
+.page-home .btn:not(.btn-outline) { background: #4a7c59; }
+.page-home .btn:not(.btn-outline):hover { background: #5c7a5c; }
 .page-home .event-calendar { background: #4a7c59; }
 .page-home .event-details .btn { background: #4a7c59; }
 .page-home .event-details .btn:hover { background: #5c7a5c; }
@@ -400,6 +409,15 @@ nav {
 .page-home .hero-subtitle { color: #3d5c44; }
 
 /* About page - Soft Pink/Rose accents */
+.page-about nav { background: #fef6f6; border-bottom-color: rgba(196, 122, 122, 0.2); box-shadow: 0 4px 20px rgba(196, 122, 122, 0.08); }
+.page-about .nav-links li > a { color: #8a5a5a; }
+.page-about .nav-links li > a:hover { color: #c47a7a; }
+.page-about .dropdown-menu { background: #fef6f6; border-color: #c47a7a; }
+.page-about .dropdown-menu a { color: #8a5a5a; }
+.page-about .dropdown-menu a:hover { background: linear-gradient(90deg, rgba(196, 122, 122, 0.2), rgba(232, 160, 160, 0.3)); color: #c47a7a; }
+.page-about .dropdown > a::after { border-top-color: #c47a7a; }
+.page-about .btns .btn { background: #c47a7a; color: #ffffff; }
+.page-about .btns .btn:hover { background: #d4a5b9; }
 .page-about .section-title { color: #c47a7a; }
 .page-about .section-title::after { background: linear-gradient(90deg, #e8a0a0, #c47a7a); }
 .page-about .story-text h3 { color: #b86a7a; }
@@ -421,6 +439,15 @@ nav {
 .page-about .team-card:hover { border-color: #e8a0a0; }
 
 /* Our Story page - Soft Blue/Sky accents */
+.page-story nav { background: #f0f7fc; border-bottom-color: rgba(74, 138, 184, 0.2); box-shadow: 0 4px 20px rgba(74, 138, 184, 0.08); }
+.page-story .nav-links li > a { color: #3a6a8a; }
+.page-story .nav-links li > a:hover { color: #4a8ab8; }
+.page-story .dropdown-menu { background: #f0f7fc; border-color: #4a8ab8; }
+.page-story .dropdown-menu a { color: #3a6a8a; }
+.page-story .dropdown-menu a:hover { background: linear-gradient(90deg, rgba(74, 138, 184, 0.2), rgba(126, 184, 218, 0.3)); color: #4a8ab8; }
+.page-story .dropdown > a::after { border-top-color: #4a8ab8; }
+.page-story .btns .btn { background: #4a8ab8; color: #ffffff; }
+.page-story .btns .btn:hover { background: #6aa8c8; }
 .page-story .section-title { color: #4a8ab8; }
 .page-story .section-title::after { background: linear-gradient(90deg, #7eb8da, #4a8ab8); }
 .page-story .story-text h3 { color: #4a8ab8; }
@@ -441,6 +468,15 @@ nav {
 .page-story .mission-icon { background: #4a8ab8; }
 
 /* Our Team page - Soft Lavender/Purple accents */
+.page-team nav { background: #f8f5fc; border-bottom-color: rgba(139, 108, 175, 0.2); box-shadow: 0 4px 20px rgba(139, 108, 175, 0.08); }
+.page-team .nav-links li > a { color: #6a5080; }
+.page-team .nav-links li > a:hover { color: #8b6caf; }
+.page-team .dropdown-menu { background: #f8f5fc; border-color: #8b6caf; }
+.page-team .dropdown-menu a { color: #6a5080; }
+.page-team .dropdown-menu a:hover { background: linear-gradient(90deg, rgba(139, 108, 175, 0.2), rgba(184, 164, 208, 0.3)); color: #8b6caf; }
+.page-team .dropdown > a::after { border-top-color: #8b6caf; }
+.page-team .btns .btn { background: #8b6caf; color: #ffffff; }
+.page-team .btns .btn:hover { background: #a090b8; }
 .page-team .section-title { color: #8b6caf; }
 .page-team .section-title::after { background: linear-gradient(90deg, #b8a4d0, #8b6caf); }
 .page-team .story-text h3 { color: #8b6caf; }
@@ -466,6 +502,15 @@ nav {
 .page-team .team-bio { color: #6a5080; }
 
 /* Mission & Vision page - Soft Mint/Green accents */
+.page-mission nav { background: #f2faf6; border-bottom-color: rgba(74, 154, 124, 0.2); box-shadow: 0 4px 20px rgba(74, 154, 124, 0.08); }
+.page-mission .nav-links li > a { color: #3a7a5c; }
+.page-mission .nav-links li > a:hover { color: #4a9a7c; }
+.page-mission .dropdown-menu { background: #f2faf6; border-color: #4a9a7c; }
+.page-mission .dropdown-menu a { color: #3a7a5c; }
+.page-mission .dropdown-menu a:hover { background: linear-gradient(90deg, rgba(74, 154, 124, 0.2), rgba(122, 196, 168, 0.3)); color: #4a9a7c; }
+.page-mission .dropdown > a::after { border-top-color: #4a9a7c; }
+.page-mission .btns .btn { background: #4a9a7c; color: #ffffff; }
+.page-mission .btns .btn:hover { background: #6cb898; }
 .page-mission .section-title { color: #4a9a7c; }
 .page-mission .section-title::after { background: linear-gradient(90deg, #7ac4a8, #4a9a7c); }
 .page-mission .story-text h3 { color: #4a9a7c; }
@@ -492,6 +537,15 @@ nav {
 .page-mission .value-card p { color: #3a7a5c; }
 
 /* Contact page - Soft Peach/Coral accents */
+.page-contact nav { background: #fef8f4; border-bottom-color: rgba(200, 128, 96, 0.2); box-shadow: 0 4px 20px rgba(200, 128, 96, 0.08); }
+.page-contact .nav-links li > a { color: #a06040; }
+.page-contact .nav-links li > a:hover { color: #c88060; }
+.page-contact .dropdown-menu { background: #fef8f4; border-color: #c88060; }
+.page-contact .dropdown-menu a { color: #a06040; }
+.page-contact .dropdown-menu a:hover { background: linear-gradient(90deg, rgba(200, 128, 96, 0.2), rgba(232, 184, 156, 0.3)); color: #c88060; }
+.page-contact .dropdown > a::after { border-top-color: #c88060; }
+.page-contact .btns .btn { background: #c88060; color: #ffffff; }
+.page-contact .btns .btn:hover { background: #d8a080; }
 .page-contact .section-title { color: #c88060; }
 .page-contact .section-title::after { background: linear-gradient(90deg, #e8b89c, #c88060); }
 .page-contact .story-text h3 { color: #c88060; }
