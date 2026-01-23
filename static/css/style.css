@@ -85,10 +85,27 @@
   --theme-border: #e8c8b0;
 }
 
+.page-donate {
+  --theme-primary: #c4a24c;
+  --theme-hover: #d4b86c;
+  --theme-light: #e8d49c;
+  --theme-text: #8a7030;
+  --theme-dark: #6a5020;
+  --theme-bg: #fefaf2;
+  --theme-bg-hero: #fefaf2;
+  --theme-surface: #fcf4e0;
+  --theme-border: #e8d8a8;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -268,6 +285,20 @@ nav {
   text-decoration: none;
   display: inline-block;
   text-align: center;
+}
+
+.register-btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+
+.register-btn:hover {
+  background: var(--theme-hover);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.register-btn:active {
+  transform: translateY(0) scale(0.98);
 }
 
 .btn:hover {
@@ -591,6 +622,28 @@ nav {
 .hero-palette-contact .blob-8,
 .hero-palette-contact .blob-9 {
   --blob-color: #d8a080;
+}
+
+/* Donate page - Soft Gold/Yellow (4 colors) */
+.hero-palette-donate {
+  background: var(--theme-bg-hero, #fefaf2);
+}
+.hero-palette-donate .blob-1,
+.hero-palette-donate .blob-5 {
+  --blob-color: #f0e4b0;
+}
+.hero-palette-donate .blob-2,
+.hero-palette-donate .blob-6 {
+  --blob-color: #e8d49c;
+}
+.hero-palette-donate .blob-3,
+.hero-palette-donate .blob-7 {
+  --blob-color: #dcc888;
+}
+.hero-palette-donate .blob-4,
+.hero-palette-donate .blob-8,
+.hero-palette-donate .blob-9 {
+  --blob-color: #d4b86c;
 }
 
 /* ===== PAGE ACCENT COLORS (excludes navbar) ===== */
@@ -1224,6 +1277,127 @@ nav {
 .page-contact select:focus {
   border-color: var(--theme-light);
   box-shadow: 0 0 0 3px rgba(232, 184, 156, 0.2);
+}
+
+/* Donate page - Soft Gold/Yellow accents */
+.page-donate nav {
+  background: var(--theme-bg);
+  border-bottom-color: rgba(196, 162, 76, 0.2);
+  box-shadow: 0 4px 20px rgba(196, 162, 76, 0.08);
+}
+.page-donate .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-donate .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-donate .dropdown-menu {
+  background: var(--theme-bg);
+  border-color: var(--theme-primary);
+}
+.page-donate .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-donate .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(196, 162, 76, 0.2), rgba(232, 212, 156, 0.3));
+  color: var(--theme-primary);
+}
+.page-donate .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-donate .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-donate .btns .btn:hover {
+  background: var(--theme-hover);
+}
+.page-donate .section-title {
+  color: var(--theme-primary);
+}
+.page-donate .section-title::after {
+  background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
+}
+.page-donate .story-text h3 {
+  color: var(--theme-primary);
+}
+.page-donate .story-text p {
+  color: var(--theme-text);
+}
+.page-donate main .btn:not(.btn-outline) {
+  background: var(--theme-primary);
+}
+.page-donate main .btn:not(.btn-outline):hover {
+  background: var(--theme-hover);
+}
+.page-donate .hero .btn:not(.btn-outline) {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-donate .hero .btn:not(.btn-outline):hover {
+  background: var(--theme-hover);
+  color: #ffffff;
+}
+.page-donate .hero .btn-outline {
+  background: transparent !important;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-donate .hero .btn-outline:hover {
+  background: rgba(196, 162, 76, 0.15) !important;
+  color: var(--theme-text);
+  border-color: var(--theme-text);
+}
+.page-donate .hero-tagline {
+  color: var(--theme-primary);
+}
+.page-donate .hero-stat-number {
+  color: var(--theme-primary);
+}
+.page-donate .hero-stat-label {
+  color: var(--theme-hover);
+}
+.page-donate .hero h1 {
+  color: var(--theme-dark);
+}
+.page-donate .hero-subtitle {
+  color: #a08040;
+}
+.page-donate .contact-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+.page-donate .card-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+.page-donate .mission-icon {
+  background: var(--theme-primary);
+}
+.page-donate .mission-card h3 {
+  color: var(--theme-primary);
+}
+.page-donate .mission-card p {
+  color: var(--theme-text);
+}
+.page-donate .mission-card:hover {
+  border-color: var(--theme-light);
+}
+.page-donate .activity-card h4 {
+  color: var(--theme-primary);
+}
+.page-donate .activity-card p {
+  color: var(--theme-text);
+}
+.page-donate .btn:not(.btn-outline) {
+  background: var(--theme-primary);
+}
+.page-donate .btn:not(.btn-outline):hover {
+  background: var(--theme-hover);
+}
+.page-donate input:focus,
+.page-donate textarea:focus,
+.page-donate select:focus {
+  border-color: var(--theme-light);
+  box-shadow: 0 0 0 3px rgba(232, 212, 156, 0.2);
 }
 
 /* Home page - Earthy/Natural form inputs */
@@ -1899,7 +2073,7 @@ nav {
   background: var(--theme-bg);
 }
 .page-home .content-section {
-  background: var(--theme-bg);
+  background: #f8f5e6;
 }
 .page-home .content-section.alt-bg {
   background: #ffffff;
@@ -1908,58 +2082,58 @@ nav {
   background: #ffffff;
 }
 .page-home .event-card {
-  background: var(--theme-surface);
-  border-color: var(--theme-border);
+  background: #f2edd8;
+  border-color: #d4cba8;
 }
 .page-home .site-footer {
-  background: var(--theme-primary);
+  background: #4a7c59;
 }
 .page-home .story-image,
 .page-home .image-placeholder {
   background: #e8e2cc;
 }
 .page-home .story-image .image-placeholder {
-  border: 3px solid var(--theme-primary);
+  border: 3px solid #4a7c59;
 }
 .page-home .team-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #d4cba8;
 }
 .page-home .mission-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #d4cba8;
 }
 .page-home .value-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #d4cba8;
 }
 .page-home .timeline::before {
-  background: linear-gradient(180deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  background: linear-gradient(180deg, #81b08b 0%, #4a7c59 100%);
 }
 .page-home .timeline-item::before {
   background: #ffffff;
-  border-color: var(--theme-primary);
+  border-color: #4a7c59;
 }
 .page-home .timeline-year {
-  color: var(--theme-primary);
+  color: #4a7c59;
 }
 .page-home .timeline-content {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #d4cba8;
 }
 .page-home .timeline-content h4 {
-  color: var(--theme-dark);
+  color: #2d4a34;
 }
 .page-home .timeline-content p {
-  color: var(--theme-text);
+  color: #3d5c44;
 }
 
 /* About page - Soft Pink/Rose backgrounds */
 .page-about {
-  background: var(--theme-bg);
+  background: #fef6f6;
 }
 .page-about .content-section {
-  background: var(--theme-bg);
+  background: #fef6f6;
 }
 .page-about .content-section.alt-bg {
   background: #ffffff;
@@ -1968,58 +2142,58 @@ nav {
   background: #ffffff;
 }
 .page-about .event-card {
-  background: var(--theme-surface);
-  border-color: var(--theme-border);
+  background: #fceaea;
+  border-color: #e8c0c0;
 }
 .page-about .site-footer {
-  background: var(--theme-primary);
+  background: #c47a7a;
 }
 .page-about .story-image,
 .page-about .image-placeholder {
   background: #f8e0e0;
 }
 .page-about .story-image .image-placeholder {
-  border: 3px solid var(--theme-primary);
+  border: 3px solid #c47a7a;
 }
 .page-about .team-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c0c0;
 }
 .page-about .mission-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c0c0;
 }
 .page-about .value-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c0c0;
 }
 .page-about .timeline::before {
-  background: linear-gradient(180deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  background: linear-gradient(180deg, #e8a0a0 0%, #c47a7a 100%);
 }
 .page-about .timeline-item::before {
   background: #ffffff;
-  border-color: var(--theme-primary);
+  border-color: #c47a7a;
 }
 .page-about .timeline-year {
-  color: var(--theme-primary);
+  color: #c47a7a;
 }
 .page-about .timeline-content {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c0c0;
 }
 .page-about .timeline-content h4 {
-  color: var(--theme-dark);
+  color: #8a4a5a;
 }
 .page-about .timeline-content p {
-  color: var(--theme-text);
+  color: #8a5a5a;
 }
 
 /* Our Story page - Soft Blue/Sky backgrounds */
 .page-story {
-  background: var(--theme-bg);
+  background: #f0f7fc;
 }
 .page-story .content-section {
-  background: var(--theme-bg);
+  background: #f0f7fc;
 }
 .page-story .content-section.alt-bg {
   background: #ffffff;
@@ -2028,58 +2202,58 @@ nav {
   background: #ffffff;
 }
 .page-story .event-card {
-  background: var(--theme-surface);
-  border-color: var(--theme-border);
+  background: #e4f0f8;
+  border-color: #b0d0e8;
 }
 .page-story .site-footer {
-  background: var(--theme-primary);
+  background: #4a8ab8;
 }
 .page-story .story-image,
 .page-story .image-placeholder {
   background: #d8e8f4;
 }
 .page-story .story-image .image-placeholder {
-  border: none;
+  border: 3px solid #4a8ab8;
 }
 .page-story .team-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #b0d0e8;
 }
 .page-story .mission-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #b0d0e8;
 }
 .page-story .value-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #b0d0e8;
 }
 .page-story .timeline-item::before {
   background: #ffffff;
-  border-color: var(--theme-primary);
+  border-color: #4a8ab8;
 }
 .page-story .timeline-content {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #b0d0e8;
 }
 .page-story .timeline::before {
-  background: linear-gradient(180deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  background: linear-gradient(180deg, #7eb8da 0%, #4a8ab8 100%);
 }
 .page-story .timeline-year {
-  color: var(--theme-primary);
+  color: #4a8ab8;
 }
 .page-story .timeline-content h4 {
-  color: var(--theme-dark);
+  color: #2a5a7a;
 }
 .page-story .timeline-content p {
-  color: var(--theme-text);
+  color: #3a6a8a;
 }
 
 /* Our Team page - Soft Lavender/Purple backgrounds */
 .page-team {
-  background: var(--theme-bg);
+  background: #f8f5fc;
 }
 .page-team .content-section {
-  background: var(--theme-bg);
+  background: #f8f5fc;
 }
 .page-team .content-section.alt-bg {
   background: #ffffff;
@@ -2088,61 +2262,61 @@ nav {
   background: #ffffff;
 }
 .page-team .event-card {
-  background: var(--theme-surface);
-  border-color: var(--theme-border);
+  background: #f0eaf8;
+  border-color: #ccc0e0;
 }
 .page-team .site-footer {
-  background: var(--theme-primary);
+  background: #8b6caf;
 }
 .page-team .story-image,
 .page-team .image-placeholder {
   background: #e8e0f0;
 }
 .page-team .story-image .image-placeholder {
-  border: 3px solid var(--theme-primary);
+  border: 3px solid #8b6caf;
 }
 .page-team .team-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #ccc0e0;
 }
 .page-team .mission-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #ccc0e0;
 }
 .page-team .value-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #ccc0e0;
 }
 .page-team .team-image {
-  background: var(--theme-surface);
+  background: #f0eaf8;
 }
 .page-team .timeline::before {
-  background: linear-gradient(180deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  background: linear-gradient(180deg, #b8a4d0 0%, #8b6caf 100%);
 }
 .page-team .timeline-item::before {
   background: #ffffff;
-  border-color: var(--theme-primary);
+  border-color: #8b6caf;
 }
 .page-team .timeline-year {
-  color: var(--theme-primary);
+  color: #8b6caf;
 }
 .page-team .timeline-content {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #ccc0e0;
 }
 .page-team .timeline-content h4 {
-  color: var(--theme-dark);
+  color: #5a4070;
 }
 .page-team .timeline-content p {
-  color: var(--theme-text);
+  color: #6a5080;
 }
 
 /* Mission & Vision page - Soft Mint/Green backgrounds */
 .page-mission {
-  background: var(--theme-bg);
+  background: #f2faf6;
 }
 .page-mission .content-section {
-  background: var(--theme-bg);
+  background: #f2faf6;
 }
 .page-mission .content-section.alt-bg {
   background: #ffffff;
@@ -2151,61 +2325,61 @@ nav {
   background: #ffffff;
 }
 .page-mission .event-card {
-  background: var(--theme-surface);
-  border-color: var(--theme-border);
+  background: #e4f4ec;
+  border-color: #a8d8c0;
 }
 .page-mission .site-footer {
-  background: var(--theme-primary);
+  background: #4a9a7c;
 }
 .page-mission .story-image,
 .page-mission .image-placeholder {
   background: #d8f0e4;
 }
 .page-mission .story-image .image-placeholder {
-  border: 3px solid var(--theme-primary);
+  border: 3px solid #4a9a7c;
 }
 .page-mission .team-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #a8d8c0;
 }
 .page-mission .mission-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #a8d8c0;
 }
 .page-mission .value-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #a8d8c0;
 }
 .page-mission .mission-vision-image {
-  background: var(--theme-surface);
+  background: #e4f4ec;
 }
 .page-mission .timeline::before {
-  background: linear-gradient(180deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  background: linear-gradient(180deg, #7ac4a8 0%, #4a9a7c 100%);
 }
 .page-mission .timeline-item::before {
   background: #ffffff;
-  border-color: var(--theme-primary);
+  border-color: #4a9a7c;
 }
 .page-mission .timeline-year {
-  color: var(--theme-primary);
+  color: #4a9a7c;
 }
 .page-mission .timeline-content {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #a8d8c0;
 }
 .page-mission .timeline-content h4 {
-  color: var(--theme-dark);
+  color: #2a5a4c;
 }
 .page-mission .timeline-content p {
-  color: var(--theme-text);
+  color: #3a7a5c;
 }
 
 /* Contact page - Soft Peach/Coral backgrounds */
 .page-contact {
-  background: var(--theme-bg);
+  background: #fef8f4;
 }
 .page-contact .content-section {
-  background: var(--theme-bg);
+  background: #fef8f4;
 }
 .page-contact .content-section.alt-bg {
   background: #ffffff;
@@ -2214,84 +2388,157 @@ nav {
   background: #ffffff;
 }
 .page-contact .event-card {
-  background: var(--theme-surface);
-  border-color: var(--theme-border);
+  background: #fcf0e8;
+  border-color: #e8c8b0;
 }
 .page-contact .site-footer {
-  background: var(--theme-primary);
+  background: #c88060;
 }
 .page-contact .story-image,
 .page-contact .image-placeholder {
   background: #f8e4d8;
 }
 .page-contact .story-image .image-placeholder {
-  border: 3px solid var(--theme-primary);
+  border: 3px solid #c88060;
 }
 .page-contact .team-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c8b0;
 }
 .page-contact .mission-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c8b0;
 }
 .page-contact .value-card {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c8b0;
 }
 .page-contact .timeline::before {
-  background: linear-gradient(180deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  background: linear-gradient(180deg, #e8b89c 0%, #c88060 100%);
 }
 .page-contact .timeline-item::before {
   background: #ffffff;
-  border-color: var(--theme-primary);
+  border-color: #c88060;
 }
 .page-contact .timeline-year {
-  color: var(--theme-primary);
+  color: #c88060;
 }
 .page-contact .timeline-content {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c8b0;
 }
 .page-contact .timeline-content h4 {
-  color: var(--theme-dark);
+  color: #8a5030;
 }
 .page-contact .timeline-content p {
-  color: var(--theme-text);
+  color: #a06040;
 }
 .page-contact .contact-form {
   background: #ffffff;
-  border-color: var(--theme-border);
+  border-color: #e8c8b0;
 }
 .page-contact .contact-info {
-  background: var(--theme-surface);
-  border-color: var(--theme-primary);
+  background: #fcf0e8;
+  border-color: #c88060;
 }
 .page-contact .contact-form-container {
-  border-color: var(--theme-primary);
+  border-color: #c88060;
 }
 .page-contact .contact-item {
-  border-color: var(--theme-border);
+  border-color: #e8c8b0;
 }
 .page-contact .social-icon {
-  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
-  border-color: var(--theme-primary);
+  background: linear-gradient(135deg, #e8b89c 0%, #c88060 100%);
+  border-color: #c88060;
 }
 .page-contact .social-icon:hover {
-  background: linear-gradient(135deg, var(--theme-hover) 0%, var(--theme-text) 100%);
-  border-color: var(--theme-text);
+  background: linear-gradient(135deg, #d8a080 0%, #b07050 100%);
+  border-color: #b07050;
 }
 .page-contact .social-links {
-  border-top-color: var(--theme-border);
+  border-top-color: #e8c8b0;
 }
 .page-contact .form-group input,
 .page-contact .form-group select,
 .page-contact .form-group textarea {
-  background: var(--theme-surface);
-  border-color: var(--theme-border);
+  background: #fcf0e8;
+  border-color: #e8c8b0;
 }
 .page-contact .form-group label {
-  color: var(--theme-primary);
+  color: #c88060;
+}
+
+/* Donate page - Soft Gold/Yellow backgrounds */
+.page-donate {
+  background: #fefaf2;
+}
+.page-donate .content-section {
+  background: #fefaf2;
+}
+.page-donate .content-section.alt-bg {
+  background: #ffffff;
+}
+.page-donate .event-date {
+  background: #ffffff;
+}
+.page-donate .event-card {
+  background: #fcf4e0;
+  border-color: #e8d8a8;
+}
+.page-donate .site-footer {
+  background: #c4a24c;
+}
+.page-donate .story-image,
+.page-donate .image-placeholder {
+  background: #f8f0d8;
+}
+.page-donate .story-image .image-placeholder {
+  border: 3px solid #c4a24c;
+}
+.page-donate .team-card {
+  background: #ffffff;
+  border-color: #e8d8a8;
+}
+.page-donate .mission-card {
+  background: #ffffff;
+  border-color: #e8d8a8;
+}
+.page-donate .value-card {
+  background: #ffffff;
+  border-color: #e8d8a8;
+}
+.page-donate .activity-card {
+  background: #ffffff;
+  border-color: #e8d8a8;
+}
+.page-donate .timeline::before {
+  background: linear-gradient(180deg, #e8d49c 0%, #c4a24c 100%);
+}
+.page-donate .timeline-item::before {
+  background: #ffffff;
+  border-color: #c4a24c;
+}
+.page-donate .timeline-year {
+  color: #c4a24c;
+}
+.page-donate .timeline-content {
+  background: #ffffff;
+  border-color: #e8d8a8;
+}
+.page-donate .timeline-content h4 {
+  color: #6a5020;
+}
+.page-donate .timeline-content p {
+  color: #8a7030;
+}
+.page-donate .form-group input,
+.page-donate .form-group select,
+.page-donate .form-group textarea {
+  background: #fcf4e0;
+  border-color: #e8d8a8;
+}
+.page-donate .form-group label {
+  color: #c4a24c;
 }
 
 .hero-content {
@@ -2589,7 +2836,7 @@ nav {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -320px;
     width: 80%;
     max-width: 320px;
     height: 100vh;
@@ -3175,6 +3422,90 @@ body.nav-open {
   padding: 0 1.25rem 1.5rem;
 }
 
+/* Donate Page Specific Styles */
+.donate-intro {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.donate-intro .lead-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--theme-text, var(--text));
+}
+
+.donate-intro p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--theme-text, var(--text));
+}
+
+.donate-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.gallery-item {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.gallery-item .image-placeholder.large {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 16px;
+}
+
+.gallery-item .image-placeholder.large span {
+  font-size: 3rem;
+}
+
+.gallery-item .image-placeholder.large p {
+  font-size: 1rem;
+  color: var(--theme-text, var(--text));
+}
+
+.donate-cta {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: var(--theme-surface, var(--surface));
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.donate-cta h2 {
+  font-size: 2rem;
+  color: var(--theme-primary, var(--primary));
+  margin-bottom: 1.5rem;
+}
+
+.donate-cta p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--theme-text, var(--text));
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  min-width: 160px;
+}
+
 /* Publications */
 .publications-list {
   display: flex;
@@ -3274,6 +3605,10 @@ body.nav-open {
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .donate-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -3292,6 +3627,14 @@ body.nav-open {
 
   .hero-subtitle {
     font-size: 1.1rem;
+  }
+
+  .donate-cta {
+    padding: 2rem;
+  }
+
+  .donate-cta h2 {
+    font-size: 1.75rem;
   }
 }
 
@@ -3313,6 +3656,15 @@ body.nav-open {
 
   .content-section {
     padding: 3rem 0;
+  }
+
+  .donate-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
