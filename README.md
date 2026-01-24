@@ -6,9 +6,9 @@ A web application built with Flask backend and vanilla HTML, CSS, and JavaScript
 
 ```
 TeddyBearClinic/
-├── app.py                 # Flask application entry point
-├── requirements.txt       # Python dependencies
-├── static/               # Static files (CSS, JS, images)
+├── app.py               # Flask application entry point
+├── requirements.txt     # Python dependencies
+├── static/              # Static files (CSS, JS, images)
 │   ├── css/             # CSS stylesheets
 │   ├── assets/          # Images, logos, etc.
 │   ├── js/              # JavaScript files
