@@ -14,24 +14,47 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentImageIndex = 0;
     let images = [];
 
-    // Collect all images from the current visible year section
+    // Collect all full resolution images from the current visible year section
     function collectImages() {
         images = [];
         const activeYear = document.querySelector('.year-tab.active')?.dataset.year || '2025';
         const activeSection = document.querySelector(`.gallery-year-section[data-year="${activeYear}"]`);
         
         if (activeSection) {
-            activeSection.querySelectorAll('.gallery-item img').forEach(img => {
-                images.push(img.src);
+            activeSection.querySelectorAll('.gallery-item').forEach(item => {
+                // Use data-fullres attribute for full resolution, fallback to img src
+                const fullResUrl = item.dataset.fullres || item.querySelector('img')?.src;
+                if (fullResUrl) {
+                    images.push(fullResUrl);
+                }
             });
         }
     }
 
-    // Open lightbox
+    // Open lightbox with full resolution image
     function openLightbox(index) {
         collectImages();
         currentImageIndex = index;
+        
+        // Show loading state
+        lightboxImg.style.opacity = '0.5';
+        
+        // Create new image to preload full resolution
+        const fullResImage = new Image();
+        fullResImage.onload = function() {
+            lightboxImg.src = images[currentImageIndex];
+            lightboxImg.style.opacity = '1';
+        };
+        fullResImage.onerror = function() {
+            // Fallback to direct load if preload fails
+            lightboxImg.src = images[currentImageIndex];
+            lightboxImg.style.opacity = '1';
+        };
+        fullResImage.src = images[currentImageIndex];
+        
+        // Set src immediately for faster perceived load
         lightboxImg.src = images[currentImageIndex];
+        
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
@@ -42,16 +65,33 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.style.overflow = '';
     }
 
+    // Load full resolution image with loading state
+    function loadFullResImage(index) {
+        // Show loading state
+        lightboxImg.style.opacity = '0.5';
+        
+        const fullResImage = new Image();
+        fullResImage.onload = function() {
+            lightboxImg.src = images[index];
+            lightboxImg.style.opacity = '1';
+        };
+        fullResImage.onerror = function() {
+            lightboxImg.src = images[index];
+            lightboxImg.style.opacity = '1';
+        };
+        fullResImage.src = images[index];
+    }
+
     // Navigate to previous image
     function prevImage() {
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-        lightboxImg.src = images[currentImageIndex];
+        loadFullResImage(currentImageIndex);
     }
 
     // Navigate to next image
     function nextImage() {
         currentImageIndex = (currentImageIndex + 1) % images.length;
-        lightboxImg.src = images[currentImageIndex];
+        loadFullResImage(currentImageIndex);
     }
 
     // Add click event to all gallery items

@@ -199,3 +199,42 @@
 .page-donate .footer-bottom {
   border-top-color: rgba(232, 212, 156, 0.2);
 }
+
+/* Donate Gallery Styles */
+.donate-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.donate-gallery .gallery-item {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.donate-gallery .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.3s ease;
+}
+
+.donate-gallery .gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .donate-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-gallery {
+    grid-template-columns: 1fr;
+  }
+}

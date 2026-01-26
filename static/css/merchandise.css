@@ -16,7 +16,9 @@
 /* Hero palette */
 .hero-palette-merchandise {
   background: var(--theme-bg-hero, #f2faf6);
+  margin-bottom: 60px;
 }
+
 .hero-palette-merchandise .blob-1,
 .hero-palette-merchandise .blob-5 {
   --blob-color: #f1c4cc;
@@ -35,12 +37,12 @@
   --blob-color: #f8c8dc;
 }
 
-.hero-palette-merchandise {
-  background: var(--theme-bg-hero, #f2faf6);
-  margin-bottom: 60px; 
+.hero-palette-merchandise .hero-content * {
+  color: var(--theme-primary) !important;
 }
 
 
+/* Header */
 .merch-header {
   background: var(--theme-hero);
   text-align: center;
@@ -59,7 +61,7 @@
   font-size: 1.2rem;
 }
 
-/* Navigation styles */
+/* Navigation */
 .page-merchandise nav {
   background: var(--theme-bg);
   border-bottom-color: rgba(251, 186, 196, 0.2);
@@ -80,7 +82,11 @@
 }
 
 .page-merchandise .dropdown-menu a:hover {
-  background: linear-gradient(90deg, rgba(255, 182, 193, 0.15), rgba(255, 224, 225, 0.25));
+  background: linear-gradient(
+    90deg,
+    rgba(255, 182, 193, 0.15),
+    rgba(255, 224, 225, 0.25)
+  );
 }
 
 .page-merchandise .dropdown > a::after {
@@ -103,7 +109,9 @@
   gap: 30px;
   padding: 0 20px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto; /* centered */
+  text-align: center;
+  justify-items: center; /* centers cards inside grid */
 }
 
 .merch-item {
@@ -113,6 +121,8 @@
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(255, 182, 193, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 350px;
+  width: 100%;
 }
 
 .merch-item:hover {
@@ -136,8 +146,7 @@
 .merch-item p {
   color: var(--theme-text);
   font-size: 1rem;
-  margin: 0 15px;
-  margin-bottom: 15px;
+  margin: 0 15px 15px;
 }
 
 .price {
@@ -165,26 +174,29 @@
   background: var(--theme-hover);
 }
 
-/* Footer styles */
+/* Footer */
 .page-merchandise .site-footer {
   background: var(--theme-dark);
+  box-shadow: none; /* removes faint line */
 }
+
 .page-merchandise .footer-section h4 {
   color: var(--theme-light);
 }
+
 .page-merchandise .footer-section p i {
   color: var(--theme-light);
 }
+
 .page-merchandise .footer-section ul a:hover {
   color: var(--theme-light);
 }
+
 .page-merchandise .footer-bottom {
-  border-top-color: rgba(255, 199, 193, 0.2);
+  border-top: none; /* removes footer border */
 }
 
-
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .merch-list {
     grid-template-columns: 1fr;
