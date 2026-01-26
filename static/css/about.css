@@ -8,7 +8,7 @@
   --theme-text: #8a5a5a;
   --theme-dark: #8a4a5a;
   --theme-bg: #fef6f6;
-  --theme-bg-hero: #fef6f6;
+  --theme-bg-hero: rgb(186, 227, 235);
   --theme-surface: #fceaea;
   --theme-border: #e8c0c0;
 }
@@ -33,6 +33,79 @@
 .hero-palette-about .blob-8,
 .hero-palette-about .blob-9 {
   --blob-color: #c9a0b3;
+}
+
+/* Navigation styles */
+.page-about nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(196, 122, 122, 0.2);
+  box-shadow: 0 4px 20px rgba(196, 122, 122, 0.08);
+}
+.page-about .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-about .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-about .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+.page-about .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-about .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(196, 122, 122, 0.15), rgba(232, 160, 160, 0.25));
+  color: var(--theme-primary);
+}
+.page-about .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-about .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-about .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* Hero adjustments */
+.page-about .hero h1 {
+  color: var(--theme-dark);
+}
+.page-about .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* Section styling */
+.page-about .section-title {
+  color: var(--theme-primary);
+}
+.page-about .section-title::after {
+  background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
+}
+
+/* Button styles */
+.page-about .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-about .btn:hover {
+  background: var(--theme-hover);
+}
+.page-about .btn-outline {
+  background: transparent;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-about .btn-outline:hover {
+  background: rgba(196, 122, 122, 0.1);
+  color: var(--theme-dark);
+}
+
+/* Alt background */
+.page-about .alt-bg {
+  background: var(--theme-surface);
 }
 
 /* Component styles */
@@ -106,9 +179,18 @@
 }
 
 /* Footer styles */
+.page-about .site-footer {
+  background: var(--theme-dark);
+}
 .page-about .footer-section h4 {
-  color: #f0b8b8;
+  color: var(--theme-light);
 }
 .page-about .footer-section p i {
   color: var(--theme-light);
+}
+.page-about .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-about .footer-bottom {
+  border-top-color: rgba(232, 160, 160, 0.2);
 }

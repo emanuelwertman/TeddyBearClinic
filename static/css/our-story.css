@@ -35,6 +35,74 @@
   --blob-color: #6aa8c8;
 }
 
+/* Navigation styles */
+.page-story nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(74, 138, 184, 0.2);
+  box-shadow: 0 4px 20px rgba(74, 138, 184, 0.08);
+}
+.page-story .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-story .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-story .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+.page-story .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-story .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(74, 138, 184, 0.15), rgba(126, 184, 218, 0.25));
+  color: var(--theme-primary);
+}
+.page-story .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-story .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-story .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* Hero adjustments */
+.page-story .hero h1 {
+  color: var(--theme-dark);
+}
+.page-story .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* Section styling */
+.page-story .section-title {
+  color: var(--theme-primary);
+}
+.page-story .section-title::after {
+  background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
+}
+
+/* Button styles */
+.page-story .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-story .btn:hover {
+  background: var(--theme-hover);
+}
+.page-story .btn-outline {
+  background: transparent;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-story .btn-outline:hover {
+  background: rgba(74, 138, 184, 0.1);
+  color: var(--theme-dark);
+}
+
 /* Component styles */
 .page-story .contact-info {
   background: #ffffff;
@@ -105,10 +173,29 @@
   color: var(--theme-dark);
 }
 
+/* Alt background */
+.page-story .alt-bg {
+  background: var(--theme-surface);
+}
+
+/* Plain background for 'Our Journey' timeline section */
+.page-story .content-section.alt-bg {
+  background-color: var(--theme-surface, #e4f0f8);
+}
+
 /* Footer styles */
+.page-story .site-footer {
+  background: var(--theme-dark);
+}
 .page-story .footer-section h4 {
-  color: #a8c8e0;
+  color: var(--theme-light);
 }
 .page-story .footer-section p i {
   color: var(--theme-light);
+}
+.page-story .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-story .footer-bottom {
+  border-top-color: rgba(126, 184, 218, 0.2);
 }

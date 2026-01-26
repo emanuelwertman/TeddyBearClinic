@@ -17,22 +17,96 @@
 .hero-palette-contact {
   background: var(--theme-bg-hero, #fef8f4);
 }
-.hero-palette-contact .blob-1,
-.hero-palette-contact .blob-5 {
+.hero-palette-contact .blob-1, .hero-palette-contact .blob-5 {
   --blob-color: #f0c8a8;
 }
-.hero-palette-contact .blob-2,
-.hero-palette-contact .blob-6 {
+.hero-palette-contact .blob-2, .hero-palette-contact .blob-6 {
   --blob-color: #e8b89c;
 }
-.hero-palette-contact .blob-3,
-.hero-palette-contact .blob-7 {
+.hero-palette-contact .blob-3, .hero-palette-contact .blob-7 {
   --blob-color: #dca888;
 }
-.hero-palette-contact .blob-4,
-.hero-palette-contact .blob-8,
+.hero-palette-contact .blob-4, .hero-palette-contact .blob-8,
 .hero-palette-contact .blob-9 {
   --blob-color: #d8a080;
+}
+
+/* Navigation styles */
+.page-contact nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(200, 128, 96, 0.2);
+  box-shadow: 0 4px 20px rgba(200, 128, 96, 0.08);
+}
+.page-contact .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-contact .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-contact .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+.page-contact .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-contact .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(200, 128, 96, 0.15), rgba(232, 184, 156, 0.25));
+  color: var(--theme-primary);
+}
+.page-contact .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-contact .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-contact .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* Hero adjustments */
+.page-contact .hero h1 {
+  color: var(--theme-dark);
+}
+.page-contact .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* Section styling */
+.page-contact .section-title {
+  color: var(--theme-primary);
+}
+.page-contact .section-title::after {
+  background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
+}
+
+/* Button styles */
+.page-contact .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-contact .btn:hover {
+  background: var(--theme-hover);
+}
+.page-contact .btn-outline {
+  background: transparent;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-contact .btn-outline:hover {
+  background: rgba(200, 128, 96, 0.1);
+  color: var(--theme-dark);
+}
+
+/* Social icon styles */
+.page-contact .social-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  border-color: var(--theme-primary);
+}
+.page-contact .social-icon:hover {
+  background: linear-gradient(135deg, var(--theme-hover) 0%, var(--theme-text) 100%);
+  border-color: var(--theme-text);
 }
 
 /* Component styles */
@@ -97,10 +171,29 @@
   color: var(--theme-dark);
 }
 
+/* Alt background */
+.page-contact .alt-bg {
+  background: var(--theme-surface);
+}
+
+/* Plain background for Contact page alt-bg sections */
+.page-contact .content-section.alt-bg {
+  background-color: var(--theme-surface, #fcf0e8);
+}
+
 /* Footer styles */
+.page-contact .site-footer {
+  background: var(--theme-dark);
+}
 .page-contact .footer-section h4 {
-  color: #f0c8a8;
+  color: var(--theme-light);
 }
 .page-contact .footer-section p i {
   color: var(--theme-light);
+}
+.page-contact .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-contact .footer-bottom {
+  border-top-color: rgba(232, 184, 156, 0.2);
 }

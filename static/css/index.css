@@ -18,6 +18,14 @@
   background: #fdf6e3;
 }
 
+/* Hero adjustments */
+.page-events .hero h1 {
+  color: var(--theme-dark);
+}
+.page-events .hero-subtitle {
+  color: var(--theme-text);
+}
+
 /* Navigation accent colors */
 .page-home nav {
   background: var(--theme-bg-hero);
@@ -201,4 +209,221 @@
 }
 .page-home .footer-section p i {
   color: var(--theme-light);
+}
+
+/* New Section Styles */
+.section-padding {
+    padding: 5rem 5%;
+}
+
+.alt-bg {
+    background-color: var(--theme-surface);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    color: var(--theme-dark);
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.5rem;
+    color: var(--theme-text);
+}
+
+/* About Section */
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text .eyebrow {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--theme-primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    color: var(--theme-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: var(--theme-text);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.btn-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Override btn-outline specific for home page */
+.page-home .btn-outline {
+    background: transparent !important;
+    border: 2px solid var(--theme-primary);
+    color: var(--theme-primary) !important;
+    min-width: 140px;
+    padding: 0.75rem 1.75rem;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.page-home .btn-outline:hover {
+    background: var(--theme-primary) !important;
+    color: #fff !important;
+}
+
+.about-image .image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 20px 20px 0 var(--theme-light);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gallery Preview */
+.gallery-grid-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Get Involved */
+.involve-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.involve-card {
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(74, 124, 89, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--theme-bg-hero);
+}
+
+.involve-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--theme-primary);
+}
+
+.involve-card .card-icon {
+    font-size: 3rem;
+    color: var(--theme-primary);
+    margin-bottom: 1.5rem;
+}
+
+.involve-card .card-icon i {
+    color: var(--theme-primary); /* Ensure icon color is correct */
+}
+
+.involve-card h3 {
+    font-size: 1.8rem;
+    color: var(--theme-dark);
+    margin-bottom: 1rem;
+}
+
+.involve-card p {
+    font-size: 1.1rem;
+    color: var(--theme-text);
+    margin-bottom: 2rem;
+}
+
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--theme-primary);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: gap 0.3s ease;
+}
+
+.link-arrow:hover {
+    gap: 1rem;
+}
+
+/* Footer styles */
+.page-home .site-footer {
+  background: var(--theme-dark);
+}
+.page-home .footer-section h4 {
+  color: var(--theme-light);
+}
+.page-home .footer-section p i {
+  color: var(--theme-light);
+}
+.page-home .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-home .footer-bottom {
+  border-top-color: rgba(129, 176, 139, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .two-column-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .section-header h2,
+    .about-text h2 {
+        font-size: 2.5rem;
+    }
 }

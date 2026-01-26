@@ -1,0 +1,567 @@
+/* Partnerships Page Specific Styles */
+
+/* Theme variables - Pastel Lavender */
+.page-partnerships {
+  --theme-primary: #8b6caf;
+  --theme-hover: #a090b8;
+  --theme-light: #b8a4d0;
+  --theme-text: #6a5080;
+  --theme-dark: #5a4070;
+  --theme-bg: #f8f5fc;
+  --theme-bg-hero: #f8f5fc;
+  --theme-surface: #f0eaf8;
+  --theme-border: #ccc0e0;
+}
+
+/* Hero palette */
+.hero-palette-partnerships {
+    background: var(--theme-bg-hero, #f8f5fc);
+}
+.hero-palette-partnerships .blob-1,
+.hero-palette-partnerships .blob-5 {
+  --blob-color: #d4c4e8;
+}
+.hero-palette-partnerships .blob-2,
+.hero-palette-partnerships .blob-6 {
+  --blob-color: #c4b0d9;
+}
+.hero-palette-partnerships .blob-3,
+.hero-palette-partnerships .blob-7 {
+  --blob-color: #b8a0d0;
+}
+.hero-palette-partnerships .blob-4,
+.hero-palette-partnerships .blob-8,
+.hero-palette-partnerships .blob-9 {
+  --blob-color: #a890c4;
+}
+
+/* Navigation accent colors */
+.page-partnerships nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(74, 124, 89, 0.2);
+  box-shadow: 0 4px 20px rgba(74, 124, 89, 0.08);
+}
+.page-partnerships .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-partnerships .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-partnerships .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+.page-partnerships .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-partnerships .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(74, 124, 89, 0.2), rgba(129, 176, 139, 0.3));
+  color: var(--theme-primary);
+}
+.page-partnerships .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-partnerships .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-partnerships .btns .btn:hover {
+  background: var(--theme-hover);
+}
+.page-partnerships .section-title {
+  color: var(--theme-primary);
+}
+.page-partnerships .section-title::after {
+  background: linear-gradient(90deg, #8fbcb5, var(--theme-primary));
+}
+.page-partnerships .story-text h3 {
+  color: var(--theme-hover);
+}
+.page-partnerships .story-text p {
+  color: var(--theme-text);
+}
+.page-partnerships .btn:not(.btn-outline) {
+  background: var(--theme-primary);
+}
+.page-partnerships .btn:not(.btn-outline):hover {
+  background: var(--theme-hover);
+}
+.page-partnerships .event-calendar {
+  background: var(--theme-primary);
+}
+.page-partnerships .event-details .btn {
+  background: var(--theme-primary);
+}
+.page-partnerships .event-details .btn:hover {
+  background: var(--theme-hover);
+}
+.page-partnerships .event-date h2 {
+  color: var(--theme-primary);
+}
+.page-partnerships .event-details h3 {
+  color: var(--theme-primary);
+}
+.page-partnerships .event-description {
+  color: var(--theme-text);
+}
+.page-partnerships .event-time,
+.page-partnerships .event-location {
+  color: var(--theme-hover);
+}
+.page-partnerships .hero .btn:not(.btn-outline) {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-partnerships .hero .btn:not(.btn-outline):hover {
+  background: var(--theme-hover);
+  color: #ffffff;
+}
+.page-partnerships .hero .btn-outline {
+  background: transparent !important;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-partnerships .hero .btn-outline:hover {
+  background: rgba(74, 124, 89, 0.15) !important;
+  color: var(--theme-text);
+  border-color: var(--theme-text);
+}
+.page-partnerships .hero-tagline {
+  color: var(--theme-hover);
+}
+.page-partnerships .hero-stat-number {
+  color: var(--theme-primary);
+}
+.page-partnerships .hero-stat-label {
+  color: var(--theme-hover);
+}
+.page-partnerships .hero h1 {
+  color: var(--theme-dark);
+}
+.page-partnerships .hero-subtitle {
+  color: var(--theme-hover);
+}
+
+/* Component styles */
+.page-partnerships .contact-info {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-partnerships .contact-text h4 {
+  color: var(--theme-primary);
+}
+.page-partnerships .contact-text p {
+  color: var(--theme-text);
+}
+.page-partnerships .social-links {
+  border-top-color: var(--theme-border);
+}
+.page-partnerships .social-links h4 {
+  color: var(--theme-primary);
+}
+.page-partnerships .social-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  border-color: var(--theme-primary);
+}
+.page-partnerships .social-icon:hover {
+  background: linear-gradient(135deg, var(--theme-hover) 0%, var(--theme-text) 100%);
+  border-color: var(--theme-text);
+}
+.page-partnerships .contact-form-container {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-home .lead-text {
+  color: var(--theme-text);
+}
+.page-partnerships .pub-logo {
+  color: var(--theme-primary);
+  background: #ffffff;
+}
+.page-partnerships .publication-item p {
+  color: var(--theme-hover);
+}
+.page-partnerships .activity-card {
+  background: var(--theme-surface);
+}
+.page-partnerships .activity-image {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+.page-partnerships .activity-card h4 {
+  color: var(--theme-primary);
+}
+.page-partnerships .activity-card p {
+  color: var(--theme-text);
+}
+.page-partnerships .team-info h3 {
+  color: var(--theme-dark);
+}
+.page-partnerships .team-role {
+  color: var(--theme-primary);
+}
+.page-partnerships .team-bio {
+  color: var(--theme-text);
+}
+.page-partnerships .founder-text h3 {
+  color: var(--theme-primary);
+}
+.page-partnerships .founder-text p {
+  color: var(--theme-text);
+}
+.page-partnerships .founder-signature {
+  color: var(--theme-dark);
+}
+
+/* Footer styles */
+.page-partnerships .site-footer {
+  background: var(--theme-dark);
+}
+.page-partnerships .footer-section h4 {
+  color: var(--theme-light);
+}
+.page-partnerships .footer-section p i {
+  color: var(--theme-light);
+}
+.page-partnerships .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-partnerships .footer-bottom {
+  border-top-color: rgba(184, 164, 208, 0.2);
+}
+/* ===== PARTNERSHIPS PAGE SPECIFIC STYLES ===== */
+
+/* Introduction Section */
+.page-partnerships .intro-text {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page-partnerships .lead-text {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--theme-text);
+}
+
+/* Partner Types Grid */
+.partner-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.partner-type-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(139, 108, 175, 0.1);
+  border: 1px solid var(--theme-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(139, 108, 175, 0.15);
+}
+
+.partner-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.partner-icon i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.partner-type-card h3 {
+  color: var(--theme-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.partner-type-card p {
+  color: var(--theme-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.benefit-card {
+  background: var(--theme-surface);
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  border-left: 4px solid var(--theme-primary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 20px rgba(139, 108, 175, 0.15);
+}
+
+.benefit-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--theme-light);
+  opacity: 0.5;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.benefit-card h4 {
+  color: var(--theme-primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+  color: var(--theme-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Opportunities List */
+.opportunities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opportunity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(139, 108, 175, 0.08);
+  border: 1px solid var(--theme-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opportunity-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(139, 108, 175, 0.12);
+}
+
+.opportunity-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opportunity-icon i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.opportunity-content h4 {
+  color: var(--theme-primary);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.opportunity-content p {
+  color: var(--theme-text);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Partnership Form Section */
+.partnership-form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.form-intro {
+  padding: 2rem;
+}
+
+.form-intro p {
+  color: var(--theme-text);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.contact-quick-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quick-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--theme-hover);
+  font-size: 1.1rem;
+}
+
+.quick-info-item i {
+  color: var(--theme-primary);
+  font-size: 1.3rem;
+  width: 24px;
+  text-align: center;
+}
+
+.partnership-form-container {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 30px rgba(139, 108, 175, 0.12);
+  border: 1px solid var(--theme-border);
+}
+
+.partnership-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.partnership-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.partnership-form label {
+  display: block;
+  color: var(--theme-primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.partnership-form input,
+.partnership-form select,
+.partnership-form textarea {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 2px solid var(--theme-border);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background: #ffffff;
+  color: var(--theme-text);
+}
+
+.partnership-form input:focus,
+.partnership-form select:focus,
+.partnership-form textarea:focus {
+  outline: none;
+  border-color: var(--theme-primary);
+  box-shadow: 0 0 0 4px rgba(139, 108, 175, 0.15);
+}
+
+.partnership-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.partnership-form select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238b6caf' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  margin-top: 0.25rem;
+  accent-color: var(--theme-primary);
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  font-weight: 400;
+  color: var(--theme-text);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.partnership-form .btn-submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .partnership-form-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .form-intro {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .contact-quick-info {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .partner-types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .opportunity-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .opportunity-icon {
+    margin: 0 auto;
+  }
+
+  .partnership-form .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .partnership-form-container {
+    padding: 1.5rem;
+  }
+}

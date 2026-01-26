@@ -94,5 +94,31 @@
                 }
             }
         });
+
+        // If a nav link points to the current page, scroll to top instead of reloading
+        (function handleSamePageNav() {
+            var navAnchors = document.querySelectorAll('.nav-links a, .btns a');
+            for (var i = 0; i < navAnchors.length; i++) {
+                (function(anchor) {
+                    anchor.addEventListener('click', function(e) {
+                        try {
+                            // ignore links explicitly opening in new tab
+                            if (anchor.target === '_blank') return;
+                            var linkUrl = new URL(anchor.href, location.href);
+                            // same origin and same pathname -> same page
+                            if (linkUrl.origin === location.origin && linkUrl.pathname === location.pathname) {
+                                // Prevent default navigation and smoothly scroll to top
+                                e.preventDefault();
+                                window.scrollTo({ top: 0, behavior: 'smooth' });
+                                // Remove any hash so URL stays clean
+                                history.replaceState(null, '', linkUrl.pathname + (linkUrl.hash || ''));
+                            }
+                        } catch (err) {
+                            // If URL parsing fails, do nothing
+                        }
+                    });
+                })(navAnchors[i]);
+            }
+        })();
     });
 })();

@@ -27,8 +27,6 @@ body {
 
 body {
   font-family: "Momo Trust Display", sans-serif;
-  background: var(--bg);
-  color: var(--text);
 }
 
 /* Font Awesome Icon Styling */
@@ -36,11 +34,11 @@ body {
 .card-icon i,
 .mission-icon i,
 .social-icon i {
-  color: var(--text-light);
+  color: var(--theme-text);
 }
 
 .feature-icon i {
-  color: var(--accent);
+  color: var(--theme-text);
 }
 
 .image-placeholder i,
@@ -63,7 +61,7 @@ nav {
   width: 100%;
   padding: 1.5rem 5%;
   min-height: 84px;
-  background: var(--surface);
+  background: var(--theme-surface);
   border-bottom: 1px solid #90e0ef33;
   backdrop-filter: blur(15px);
   box-shadow: 0 4px 20px rgba(0, 180, 216, 0.08);
@@ -124,7 +122,7 @@ nav {
   transform: translateX(-50%);
   margin-top: 1rem;
   background: var(--surface);
-  border: 2px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: 12px;
   min-width: 200px;
   padding: 0.5rem 0;
@@ -167,7 +165,7 @@ nav {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 2rem;
+  margin-left: 0.4rem;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid currentColor;
@@ -221,7 +219,7 @@ nav {
 }
 
 .btn:hover {
-  background: var(--secondary);
+  background: var(--theme-hover);
   transform: translateY(-3px);
 }
 
@@ -542,11 +540,11 @@ nav {
 .event-card {
   display: flex;
   gap: 2rem;
-  background: var(--bg);
+  background: var(--theme-surface);
   border-radius: 20px;
   padding: 2rem;
   box-shadow: 0 8px 32px rgba(0, 180, 216, 0.12);
-  border: 2px solid var(--border);
+  border: 2px solid var(--theme-primary);
 }
 
 .event-calendar {
@@ -1824,7 +1822,7 @@ body.nav-open {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 180, 216, 0.1);
-  border: 2px solid var(--border);
+  border: 2px solid var(--theme-surface);
   transition: all 0.3s;
 }
 
@@ -2022,7 +2020,7 @@ body.nav-open {
 .mission-statement {
   font-size: 1.25rem;
   line-height: 1.8;
-  color: var(--text);
+  color: var(--theme-text);
 }
 
 /* Mission/Vision Layout with Images */
@@ -2046,7 +2044,7 @@ body.nav-open {
   min-height: 280px;
   border-radius: 20px;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-text) 100%);
 }
 
 .mission-vision-image .image-placeholder img {
@@ -2063,7 +2061,7 @@ body.nav-open {
   border-radius: 20px;
   padding: 2.5rem;
   box-shadow: 0 8px 32px rgba(0, 180, 216, 0.12);
-  border: 2px solid var(--border);
+  border: 2px solid var(--theme-primary);
 }
 
 .mission-vision-text .mission-statement {
@@ -2078,16 +2076,16 @@ body.nav-open {
 }
 
 .value-card {
-  background: var(--surface);
+  background: var(--theme-surface);
   border-radius: 16px;
   padding: 2rem;
   text-align: center;
-  border: 2px solid var(--border);
+  border: 2px solid var(--theme-primary);
   transition: all 0.3s;
 }
 
 .value-card:hover {
-  border-color: var(--accent);
+  border-color: var(--theme-hover);
   box-shadow: 0 8px 30px rgba(0, 180, 216, 0.15);
 }
 
@@ -2097,19 +2095,19 @@ body.nav-open {
 }
 
 .value-card .card-icon i {
-  color: var(--green-accent);
+  color: var(--theme-text);
 }
 
 .value-card h3 {
   font-size: 1.25rem;
-  color: var(--primary);
+  color: var(--theme-text);
   margin-bottom: 0.75rem;
 }
 
 .value-card p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: var(--text);
+  color: var(--theme-text);
 }
 
 /* Goals List */
@@ -2125,17 +2123,17 @@ body.nav-open {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
-  background: var(--bg);
+  background: var(--theme-surface);
   border-radius: 16px;
   padding: 1.75rem;
-  border: 2px solid var(--border);
+  border: 2px solid var(--theme-primary);
 }
 
 .goal-number {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--accent);
-  background: var(--surface);
+  color: var(--theme-text);
+  background: var(--theme-surface);
   width: 60px;
   height: 60px;
   border-radius: 12px;
@@ -2143,19 +2141,19 @@ body.nav-open {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  border: 2px solid var(--border);
+  border: 2px solid var(--theme-primary);
 }
 
 .goal-content h4 {
   font-size: 1.2rem;
-  color: var(--primary);
+  color: var(--theme-text);
   margin-bottom: 0.5rem;
 }
 
 .goal-content p {
   font-size: 1rem;
   line-height: 1.7;
-  color: var(--text);
+  color: var(--theme-text);
 }
 
 /* ===== OUR STORY PAGE STYLES ===== */
@@ -2237,7 +2235,7 @@ body.nav-open {
 }
 
 .founder-image .image-placeholder {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+  background: transparent;
   border-radius: 20px;
   padding: 0;
   text-align: center;

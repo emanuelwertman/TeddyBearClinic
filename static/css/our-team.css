@@ -35,6 +35,74 @@
   --blob-color: #a090b8;
 }
 
+/* Navigation styles */
+.page-team nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(139, 108, 175, 0.2);
+  box-shadow: 0 4px 20px rgba(139, 108, 175, 0.08);
+}
+.page-team .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-team .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-team .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+.page-team .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-team .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(139, 108, 175, 0.15), rgba(184, 164, 208, 0.25));
+  color: var(--theme-primary);
+}
+.page-team .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-team .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-team .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* Hero adjustments */
+.page-team .hero h1 {
+  color: var(--theme-dark);
+}
+.page-team .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* Section styling */
+.page-team .section-title {
+  color: var(--theme-primary);
+}
+.page-team .section-title::after {
+  background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
+}
+
+/* Button styles */
+.page-team .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-team .btn:hover {
+  background: var(--theme-hover);
+}
+.page-team .btn-outline {
+  background: transparent;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-team .btn-outline:hover {
+  background: rgba(139, 108, 175, 0.1);
+  color: var(--theme-dark);
+}
+
 /* Component styles */
 .page-team .contact-info {
   background: #ffffff;
@@ -108,10 +176,94 @@
   color: var(--theme-dark);
 }
 
+/* Alt background */
+.page-team .alt-bg {
+  background: var(--theme-surface);
+}
+
+/* Plain background for Our Team alt-bg sections */
+.page-team .content-section.alt-bg {
+  background-color: var(--theme-surface, #f0eaf8);
+}
+
+/* Team cards */
+.page-team .team-card {
+  box-shadow: 0 4px 20px rgba(139, 108, 175, 0.1);
+}
+.page-team .team-card:hover {
+  box-shadow: 0 12px 40px rgba(139, 108, 175, 0.2);
+}
+.page-team .team-image {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+
+/* Feature items (Community Partners) */
+.page-team .feature-item {
+  border-color: var(--theme-border);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.page-team .feature-item:hover {
+  border-color: var(--theme-primary);
+  box-shadow: 0 4px 20px rgba(139, 108, 175, 0.15);
+  background: rgba(184, 164, 208, 0.15);
+}
+.page-team .feature-icon {
+  color: var(--theme-primary);
+}
+.page-team .feature-icon i {
+  color: var(--theme-primary);
+}
+.page-team .feature-item h4 {
+  color: var(--theme-dark);
+}
+.page-team .feature-item p {
+  color: var(--theme-text);
+}
+
+/* Stat items (Join Our Team section) */
+.page-team .stat-item {
+  background: linear-gradient(135deg, var(--theme-surface) 0%, rgba(184, 164, 208, 0.3) 100%);
+  border-color: var(--theme-border);
+  box-shadow: 0 4px 20px rgba(139, 108, 175, 0.12);
+}
+.page-team .stat-item::before {
+  background: linear-gradient(90deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+.page-team .stat-item:hover {
+  box-shadow: 0 8px 30px rgba(139, 108, 175, 0.2);
+  border-color: var(--theme-primary);
+}
+.page-team .stat-number {
+  background: linear-gradient(135deg, var(--theme-dark) 0%, var(--theme-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.page-team .stat-label {
+  color: var(--theme-text);
+}
+
+/* Volunteers section */
+.page-team .volunteers-text .lead-text {
+  color: var(--theme-text);
+}
+.page-team .volunteers-text p {
+  color: var(--theme-text);
+}
+
 /* Footer styles */
+.page-team .site-footer {
+  background: var(--theme-dark);
+}
 .page-team .footer-section h4 {
-  color: #c9b8dc;
+  color: var(--theme-light);
 }
 .page-team .footer-section p i {
   color: var(--theme-light);
+}
+.page-team .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-team .footer-bottom {
+  border-top-color: rgba(184, 164, 208, 0.2);
 }

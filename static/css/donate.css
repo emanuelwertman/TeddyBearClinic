@@ -34,3 +34,168 @@
 .hero-palette-donate .blob-9 {
   --blob-color: #d4b86c;
 }
+
+/* Navigation styles */
+.page-donate nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(196, 162, 76, 0.2);
+  box-shadow: 0 4px 20px rgba(196, 162, 76, 0.08);
+}
+.page-donate .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-donate .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-donate .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+.page-donate .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-donate .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(196, 162, 76, 0.15), rgba(232, 212, 156, 0.25));
+  color: var(--theme-primary);
+}
+.page-donate .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-donate .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-donate .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* Hero adjustments */
+.page-donate .hero h1 {
+  color: var(--theme-dark);
+}
+.page-donate .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* Section styling */
+.page-donate .section-title {
+  color: var(--theme-primary);
+}
+.page-donate .section-title::after {
+  background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
+}
+
+/* Button styles */
+.page-donate .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-donate .btn:hover {
+  background: var(--theme-hover);
+}
+.page-donate .btn-outline {
+  background: transparent;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-donate .btn-outline:hover {
+  background: rgba(196, 162, 76, 0.1);
+  color: var(--theme-dark);
+}
+
+/* Alt background */
+.page-donate .alt-bg {
+  background: var(--theme-surface);
+}
+
+/* Component styles */
+.page-donate .contact-info {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-donate .contact-text h4 {
+  color: var(--theme-primary);
+}
+.page-donate .contact-text p {
+  color: var(--theme-text);
+}
+.page-donate .social-links {
+  border-top-color: var(--theme-border);
+}
+.page-donate .social-links h4 {
+  color: var(--theme-primary);
+}
+.page-donate .social-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  border-color: var(--theme-primary);
+}
+.page-donate .social-icon:hover {
+  background: linear-gradient(135deg, var(--theme-hover) 0%, var(--theme-text) 100%);
+  border-color: var(--theme-text);
+}
+.page-donate .contact-form-container {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-donate .lead-text {
+  color: var(--theme-text);
+}
+.page-donate .pub-logo {
+  color: var(--theme-primary);
+  background: #ffffff;
+}
+.page-donate .publication-item p {
+  color: var(--theme-text);
+}
+.page-donate .activity-card {
+  background: var(--theme-surface);
+}
+.page-donate .activity-image {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+.page-donate .activity-card h4 {
+  color: var(--theme-primary);
+}
+.page-donate .activity-card p {
+  color: var(--theme-text);
+}
+.page-donate .team-info h3 {
+  color: var(--theme-dark);
+}
+.page-donate .team-role {
+  color: var(--theme-primary);
+}
+.page-donate .team-bio {
+  color: var(--theme-text);
+}
+.page-donate .founder-text h3 {
+  color: var(--theme-primary);
+}
+.page-donate .founder-text p {
+  color: var(--theme-text);
+}
+.page-donate .founder-signature {
+  color: var(--theme-dark);
+}
+
+/* Mission card icon styles */
+.page-donate .mission-card .card-icon i {
+  color: #ffffff;
+}
+
+/* Footer styles */
+.page-donate .site-footer {
+  background: var(--theme-dark);
+}
+.page-donate .footer-section h4 {
+  color: var(--theme-light);
+}
+.page-donate .footer-section p i {
+  color: var(--theme-light);
+}
+.page-donate .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-donate .footer-bottom {
+  border-top-color: rgba(232, 212, 156, 0.2);
+}
