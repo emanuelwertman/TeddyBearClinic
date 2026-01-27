@@ -237,3 +237,299 @@
   border-top-color: rgba(232, 184, 156, 0.2);
 }
 
+/* FAQ Section */
+.faq-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.faq-item {
+  background: var(--theme-bg--bg);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  border: 2px solid var(--theme-border);
+  transition: all 0.3s;
+}
+
+.faq-item:hover {
+  border-color: var(--theme-border);
+  box-shadow: 0 4px 20px rgba(0, 180, 216, 0.15);
+}
+
+.faq-question {
+  font-size: 1.15rem;
+  color: var(--theme-primary);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.faq-question::before {
+  content: "?";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  color: var(--text-light);
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--theme-text);
+  padding-left: 2.75rem;
+}
+
+/* ===== CONTACT PAGE STYLES ===== */
+
+/* Contact Wrapper */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Contact Info */
+.contact-info {
+  background: var(--theme-surface);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 180, 216, 0.12);
+  border: 2px solid var(--theme-border);
+}
+
+.contact-info .section-title {
+  text-align: left;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info .section-title::after {
+  margin: 1rem 0 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  font-size: 1.75rem;
+  background: linear-gradient(135deg, var(--theme-surface) 0%, var(--theme-light) 100%);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-text h4 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 0.35rem;
+}
+
+.contact-text p {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.social-links {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--border);
+}
+
+.social-links h4 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  background: var(--bg);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 2px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.4s ease;
+}
+
+.social-icon:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Form */
+.contact-form-container {
+  background: var(--surface);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 180, 216, 0.12);
+  border: 2px solid var(--border);
+}
+
+.contact-form-container .section-title {
+  text-align: left;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form-container .section-title::after {
+  margin: 1rem 0 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 2px solid var(--theme-primary);
+  border-radius: 12px;
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--theme-hover);
+  background: var(--theme-surface);
+  box-shadow: 0 0 0 4px rgba(200, 128, 96, 0.15);
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: var(--theme-hover);
+  background-color: var(--theme-surface);
+  box-shadow: 0 0 0 4px rgba(200, 128, 96, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text);
+  opacity: 0.5;
+}
+
+/* Select wrapper for arrow animation */
+.form-group.select-wrapper {
+  position: relative;
+}
+
+.form-group.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 1.25rem;
+  top: calc(50% + 0.75rem);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--theme-text);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.form-group.select-wrapper:focus-within::after {
+  transform: rotate(180deg);
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  padding-right: 3rem;
+  box-shadow: 0 4px 16px rgba(200, 128, 96, 0.1);
+}
+
+.form-group select:hover {
+  border-color: var(--theme-hover);
+  box-shadow: 0 8px 24px rgba(200, 128, 96, 0.15);
+}
+
+.form-group select option {
+  background: #ffffff;
+  color: var(--theme-text);
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.form-group select option:hover,
+.form-group select option:focus,
+.form-group select option:checked {
+  background: linear-gradient(90deg, rgba(200, 128, 96, 0.15), rgba(232, 184, 156, 0.25));
+  color: var(--theme-primary);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.btn-submit {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  padding: 1rem 2.5rem;
+  font-family: "Momo Trust Display", sans-serif;
+}

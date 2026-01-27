@@ -110,6 +110,7 @@
   padding: 0 20px;
   max-width: 1200px;
   margin: 0 auto 20px auto; /* centered */
+  margin-bottom: 60px;
   text-align: center;
   justify-items: center; /* centers cards inside grid */
 }
@@ -177,7 +178,6 @@
 /* Footer */
 .page-merchandise .site-footer {
   background: var(--theme-dark);
-  box-shadow: none; /* removes faint line */
 }
 
 .page-merchandise .footer-section h4 {
@@ -192,9 +192,33 @@
   color: var(--theme-light);
 }
 
-.page-merchandise .footer-bottom {
-  border-top: none; /* removes footer border */
+
+/* Responsive */
+@media (max-width: 768px) {
+  .merch-list {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .merch-header h1 {
+    font-size: 2rem;
+  }
+
+  .merch-header p {
+    font-size: 1rem;
+  }
 }
+
+.merch-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 0 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

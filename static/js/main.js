@@ -120,5 +120,57 @@
                 })(navAnchors[i]);
             }
         })();
+
+        // ===== RANDOMIZE HERO TEDDY POSITIONS =====
+        (function randomizeTeddyPositions() {
+            var teddies = document.querySelectorAll('.hero-teddy');
+            if (!teddies.length) return;
+
+            // Define safe zones concentrated in upper portion (for shorter hero sections)
+            var zones = [
+                { top: [3, 18], left: [3, 22] },      // top-left
+                { top: [3, 18], left: [75, 95] },     // top-right
+                { top: [5, 20], left: [25, 40] },     // upper-left-center
+                { top: [5, 20], left: [58, 75] },     // upper-right-center
+                { top: [18, 35], left: [3, 18] },     // mid-upper-left
+                { top: [18, 35], left: [80, 95] },    // mid-upper-right
+                { top: [30, 50], left: [3, 15] },     // middle-left
+                { top: [30, 50], left: [82, 95] }     // middle-right
+            ];
+
+            // Shuffle zones array
+            for (var i = zones.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = zones[i];
+                zones[i] = zones[j];
+                zones[j] = temp;
+            }
+
+            teddies.forEach(function(teddy, index) {
+                // Pick a zone for this teddy (cycle through if more teddies than zones)
+                var zone = zones[index % zones.length];
+                
+                // Random position within the zone
+                var randomTop = zone.top[0] + Math.random() * (zone.top[1] - zone.top[0]);
+                var randomLeft = zone.left[0] + Math.random() * (zone.left[1] - zone.left[0]);
+                
+                // Random size variation (80px to 120px)
+                var randomSize = 80 + Math.random() * 40;
+                
+                // Random animation delay for more organic movement
+                var randomDelay = -Math.random() * 30;
+                var randomDuration = 20 + Math.random() * 15;
+
+                // Apply random styles
+                teddy.style.setProperty('--teddy-top', randomTop + '%');
+                teddy.style.setProperty('--teddy-left', randomLeft + '%');
+                teddy.style.setProperty('--teddy-size', randomSize + 'px');
+                teddy.style.setProperty('--float-delay', randomDelay + 's');
+                teddy.style.setProperty('--float-duration', randomDuration + 's');
+                
+                // Remove any fixed 'right' positioning to use left instead
+                teddy.style.right = 'auto';
+            });
+        })();
     });
 })();

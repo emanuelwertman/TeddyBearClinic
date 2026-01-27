@@ -14,6 +14,66 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentImageIndex = 0;
     let images = [];
 
+    // ============================================
+    // PERFORMANCE OPTIMIZATION: Progressive Image Loading
+    // ============================================
+    
+    // Create Intersection Observer for lazy loading with early trigger
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const item = entry.target;
+                const img = item.querySelector('img');
+                
+                if (img && img.dataset.src) {
+                    // Start loading the image
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    
+                    // Add loaded class when image is ready
+                    img.onload = () => {
+                        item.classList.add('loaded');
+                        item.classList.remove('loading');
+                    };
+                    
+                    img.onerror = () => {
+                        item.classList.add('error');
+                        item.classList.remove('loading');
+                    };
+                }
+                
+                // Stop observing this item
+                observer.unobserve(item);
+            }
+        });
+    }, {
+        rootMargin: '200px 0px', // Start loading 200px before entering viewport
+        threshold: 0.01
+    });
+
+    // Initialize lazy loading for all gallery items
+    function initLazyLoading() {
+        galleryItems.forEach(item => {
+            const img = item.querySelector('img');
+            if (img) {
+                // Move src to data-src for lazy loading
+                const currentSrc = img.getAttribute('src');
+                if (currentSrc && !img.dataset.src) {
+                    img.dataset.src = currentSrc;
+                    // Use a tiny transparent placeholder
+                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 3"%3E%3C/svg%3E';
+                    item.classList.add('loading');
+                }
+                
+                // Observe this item
+                imageObserver.observe(item);
+            }
+        });
+    }
+
+    // Initialize lazy loading
+    initLazyLoading();
+
     // Collect all full resolution images from the current visible year section
     function collectImages() {
         images = [];
@@ -22,9 +82,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (activeSection) {
             activeSection.querySelectorAll('.gallery-item').forEach(item => {
-                // Use data-fullres attribute for full resolution, fallback to img src
-                const fullResUrl = item.dataset.fullres || item.querySelector('img')?.src;
-                if (fullResUrl) {
+                // Use data-fullres attribute for full resolution, fallback to img src or data-src
+                const img = item.querySelector('img');
+                const fullResUrl = item.dataset.fullres || img?.dataset.src || img?.src;
+                if (fullResUrl && !fullResUrl.startsWith('data:')) {
                     images.push(fullResUrl);
                 }
             });

@@ -1,45 +1,45 @@
 /* Donate Page Specific Styles */
 
-/* Theme variables */
+/* Theme variables - Coral/Rose theme */
 .page-donate {
-  --theme-primary: #c4a24c;
-  --theme-hover: #d4b86c;
-  --theme-light: #e8d49c;
-  --theme-text: #8a7030;
-  --theme-dark: #6a5020;
-  --theme-bg: #fefaf2;
-  --theme-bg-hero: #fefaf2;
-  --theme-surface: #fcf4e0;
-  --theme-border: #e8d8a8;
+  --theme-primary: #e07a5f;
+  --theme-hover: #c96a52;
+  --theme-light: #f4a896;
+  --theme-text: #5c4742;
+  --theme-dark: #3d2c29;
+  --theme-bg: #fef8f6;
+  --theme-bg-hero: #fef8f6;
+  --theme-surface: #fdf0ed;
+  --theme-border: #f4cfc6;
 }
 
 /* Hero palette */
 .hero-palette-donate {
-  background: var(--theme-bg-hero, #fefaf2);
+  background: var(--theme-bg-hero, #fef8f6);
 }
 .hero-palette-donate .blob-1,
 .hero-palette-donate .blob-5 {
-  --blob-color: #f0e4b0;
+  --blob-color: #fbe0da;
 }
 .hero-palette-donate .blob-2,
 .hero-palette-donate .blob-6 {
-  --blob-color: #e8d49c;
+  --blob-color: #f4cfc6;
 }
 .hero-palette-donate .blob-3,
 .hero-palette-donate .blob-7 {
-  --blob-color: #dcc888;
+  --blob-color: #f4a896;
 }
 .hero-palette-donate .blob-4,
 .hero-palette-donate .blob-8,
 .hero-palette-donate .blob-9 {
-  --blob-color: #d4b86c;
+  --blob-color: #e07a5f;
 }
 
 /* Navigation styles */
 .page-donate nav {
   background: var(--theme-bg-hero);
-  border-bottom-color: rgba(196, 162, 76, 0.2);
-  box-shadow: 0 4px 20px rgba(196, 162, 76, 0.08);
+  border-bottom-color: rgba(224, 122, 95, 0.2);
+  box-shadow: 0 4px 20px rgba(224, 122, 95, 0.08);
 }
 .page-donate .nav-links li > a {
   color: var(--theme-text);
@@ -55,7 +55,7 @@
   color: var(--theme-text);
 }
 .page-donate .dropdown-menu a:hover {
-  background: linear-gradient(90deg, rgba(196, 162, 76, 0.15), rgba(232, 212, 156, 0.25));
+  background: linear-gradient(90deg, rgba(224, 122, 95, 0.15), rgba(244, 168, 150, 0.25));
   color: var(--theme-primary);
 }
 .page-donate .dropdown > a::after {
@@ -178,9 +178,41 @@
   color: var(--theme-dark);
 }
 
-/* Mission card icon styles */
+/* Story section styles */
+.page-donate .story-text h3 {
+  color: var(--theme-primary);
+}
+.page-donate .story-text p {
+  color: var(--theme-text);
+}
+
+/* Mission card styles */
+.page-donate .mission-card {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(224, 122, 95, 0.15);
+}
+.page-donate .mission-card:hover {
+  box-shadow: 0 12px 40px rgba(224, 122, 95, 0.25);
+}
+.page-donate .mission-card h3 {
+  color: #5a4a20;
+}
+.page-donate .mission-card p {
+  color: #4a4a4a;
+}
+.page-donate .mission-card .card-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
 .page-donate .mission-card .card-icon i {
   color: #ffffff;
+  font-size: 2rem;
 }
 
 /* Footer styles */
@@ -213,6 +245,7 @@
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
 }
 
 .donate-gallery .gallery-img {
@@ -221,6 +254,8 @@
   object-fit: cover;
   object-position: center top;
   transition: transform 0.3s ease;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
 .donate-gallery .gallery-item:hover .gallery-img {

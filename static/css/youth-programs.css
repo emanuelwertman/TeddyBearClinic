@@ -1,0 +1,199 @@
+/* youth-programs & Vision Page Specific Styles */
+
+/* Theme variables */
+.page-youth-programs {
+  --theme-primary: #4a9a7c;
+  --theme-hover: #6cb898;
+  --theme-light: #7ac4a8;
+  --theme-text: #3a7a5c;
+  --theme-dark: #2a5a4c;
+  --theme-bg: #f2faf6;
+  --theme-bg-hero: #f2faf6;
+  --theme-surface: #e4f4ec;
+  --theme-border: #a8d8c0;
+}
+
+/* Hero palette */
+.hero-palette-youth-programs {
+  background: var(--theme-bg-hero, #f2faf6);
+}
+.hero-palette-youth-programs .blob-1,
+.hero-palette-youth-programs .blob-5 {
+  --blob-color: #a0d8c0;
+}
+.hero-palette-youth-programs .blob-2,
+.hero-palette-youth-programs .blob-6 {
+  --blob-color: #7ac4a8;
+}
+.hero-palette-youth-programs .blob-3,
+.hero-palette-youth-programs .blob-7 {
+  --blob-color: #8cd4b4;
+}
+.hero-palette-youth-programs .blob-4,
+.hero-palette-youth-programs .blob-8,
+.hero-palette-youth-programs .blob-9 {
+  --blob-color: #6cb898;
+}
+
+/* Navigation styles */
+.page-youth-programs nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(74, 154, 124, 0.2);
+  box-shadow: 0 4px 20px rgba(74, 154, 124, 0.08);
+}
+.page-youth-programs .nav-links li > a {
+  color: var(--theme-text);
+}
+.page-youth-programs .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+.page-youth-programs .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+.page-youth-programs .dropdown-menu a {
+  color: var(--theme-text);
+}
+.page-youth-programs .dropdown-menu a:hover {
+  background: linear-gradient(90deg, rgba(74, 154, 124, 0.15), rgba(122, 196, 168, 0.25));
+  color: var(--theme-primary);
+}
+.page-youth-programs .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+.page-youth-programs .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-youth-programs .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* Hero adjustments */
+.page-youth-programs .hero h1 {
+  color: var(--theme-dark);
+}
+.page-youth-programs .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* Section styling */
+.page-youth-programs .section-title {
+  color: var(--theme-primary);
+}
+.page-youth-programs .section-title::after {
+  background: linear-gradient(90deg, var(--theme-light), var(--theme-primary));
+}
+
+/* Button styles */
+.page-youth-programs .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+.page-youth-programs .btn:hover {
+  background: var(--theme-hover);
+}
+.page-youth-programs .btn-outline {
+  background: transparent;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+.page-youth-programs .btn-outline:hover {
+  background: rgba(74, 154, 124, 0.1);
+  color: var(--theme-dark);
+}
+
+/* Alt background */
+.page-youth-programs .alt-bg {
+  background: var(--theme-surface);
+}
+
+/* Component styles */
+.page-youth-programs .contact-info {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-youth-programs .contact-text h4 {
+  color: var(--theme-primary);
+}
+.page-youth-programs .contact-text p {
+  color: var(--theme-text);
+}
+.page-youth-programs .social-links {
+  border-top-color: var(--theme-border);
+}
+.page-youth-programs .social-links h4 {
+  color: var(--theme-primary);
+}
+.page-youth-programs .social-icon {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+  border-color: var(--theme-primary);
+}
+.page-youth-programs .social-icon:hover {
+  background: linear-gradient(135deg, var(--theme-hover) 0%, var(--theme-text) 100%);
+  border-color: var(--theme-text);
+}
+.page-youth-programs .contact-form-container {
+  background: #ffffff;
+  border-color: var(--theme-primary);
+}
+.page-youth-programs .lead-text {
+  color: var(--theme-text);
+}
+.page-youth-programs .pub-logo {
+  color: var(--theme-primary);
+  background: #ffffff;
+}
+.page-youth-programs .publication-item p {
+  color: var(--theme-text);
+}
+.page-youth-programs .activity-card {
+  background: var(--theme-surface);
+}
+.page-youth-programs .activity-image {
+  background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
+}
+.page-youth-programs .activity-card h4 {
+  color: var(--theme-primary);
+}
+.page-youth-programs .activity-card p {
+  color: var(--theme-text);
+}
+.page-youth-programs .team-info h3 {
+  color: var(--theme-dark);
+}
+.page-youth-programs .team-role {
+  color: var(--theme-primary);
+}
+.page-youth-programs .team-bio {
+  color: var(--theme-text);
+}
+.page-youth-programs .founder-text h3 {
+  color: var(--theme-primary);
+}
+.page-youth-programs .founder-text p {
+  color: var(--theme-text);
+}
+.page-youth-programs .founder-signature {
+  color: var(--theme-dark);
+}
+
+/* Footer styles */
+.page-youth-programs .site-footer {
+  background: var(--theme-dark);
+}
+.page-youth-programs .footer-section h4 {
+  color: var(--theme-light);
+}
+.page-youth-programs .footer-section p i {
+  color: var(--theme-light);
+}
+.page-youth-programs .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+.page-youth-programs .footer-bottom {
+  border-top-color: rgba(122, 196, 168, 0.2);
+}
+.page-youth-programs .content-section.alt-bg {
+  background-color: var(--theme-surface, #e4f4ec);
+}
