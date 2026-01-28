@@ -244,6 +244,52 @@
 }
 
 /* Volunteers section */
+.page-team .volunteers-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.page-team .volunteers-text {
+  flex: 1 1 350px;
+}
+
+.page-team .volunteers-image {
+  flex: 1 1 500px;
+}
+
+.page-team .volunteers-image .image-placeholder.large {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page-team .volunteers-image .image-placeholder.large img {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .page-team .volunteers-content {
+    flex-direction: column-reverse;
+  }
+  
+  .page-team .volunteers-text,
+  .page-team .volunteers-image {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
 .page-team .volunteers-text .lead-text {
   color: var(--theme-text);
 }
