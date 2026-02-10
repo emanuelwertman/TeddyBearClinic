@@ -1,0 +1,213 @@
+/* =================================
+   Community Outreach Page Styles
+   ================================= */
+
+/* Theme variables */
+.page-community-outreach {
+  /* Brand */
+  --theme-primary: #F5EC59;   /* Warm community yellow */
+  --theme-hover: #EFE27C;     /* Softer hover yellow */
+  --theme-light: #FBF7C8;     /* Pastel highlight */
+
+    --theme-text: #919182;
+    --theme-dark: #3F3E1F;
+
+  /* Backgrounds */
+  --theme-bg: #FFFDF3;        /* Page background */
+  --theme-bg-hero: #FFFBE6;   /* Hero background */
+  --theme-surface: #FBF6D9;   /* Cards / alt sections */
+
+  /* Borders */
+  --theme-border: #E9E1A4;
+}
+
+/* ================================
+   Hero palette
+   ================================ */
+
+.hero-palette-community-outreach {
+  background: var(--theme-bg-hero);
+}
+
+.hero-palette-community-outreach .blob-1,
+.hero-palette-community-outreach .blob-5 {
+  --blob-color: #FBF4B5;
+}
+
+.hero-palette-community-outreach .blob-2,
+.hero-palette-community-outreach .blob-6 {
+  --blob-color: #F7EE8F;
+}
+
+.hero-palette-community-outreach .blob-3,
+.hero-palette-community-outreach .blob-7 {
+  --blob-color: #F5EC59;
+}
+
+.hero-palette-community-outreach .blob-4,
+.hero-palette-community-outreach .blob-8,
+.hero-palette-community-outreach .blob-9 {
+  --blob-color: #E8DC4D;
+}
+
+/* ================================
+   Navigation
+   ================================ */
+
+.page-community-outreach nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(245, 236, 89, 0.3);
+  box-shadow: 0 4px 20px rgba(245, 236, 89, 0.12);
+}
+
+.page-community-outreach .nav-links li > a {
+  color: var(--theme-text);
+}
+
+.page-community-outreach .nav-links li > a:hover {
+  color: var(--theme-dark);
+}
+
+.page-community-outreach .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+
+.page-community-outreach .dropdown-menu a {
+  color: var(--theme-text);
+}
+
+.page-community-outreach .dropdown-menu a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(245, 236, 89, 0.2),
+    rgba(251, 247, 200, 0.35)
+  );
+  color: var(--theme-dark);
+}
+
+.page-community-outreach .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+
+.page-community-outreach .btns .btn {
+  background: var(--theme-primary);
+  color: var(--theme-dark);
+}
+
+.page-community-outreach .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* ================================
+   Hero text
+   ================================ */
+
+.page-community-outreach .hero h1 {
+  color: var(--theme-dark);
+}
+
+.page-community-outreach .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* ================================
+   Section titles
+   ================================ */
+
+.page-community-outreach .section-title {
+  color: var(--theme-dark);
+}
+
+.page-community-outreach .section-title::after {
+  background: linear-gradient(
+    90deg,
+    var(--theme-light),
+    var(--theme-primary)
+  );
+}
+
+/* ================================
+   Buttons
+   ================================ */
+
+.page-community-outreach .btn {
+  background: var(--theme-primary);
+  color: var(--theme-dark);
+}
+
+.page-community-outreach .btn:hover {
+  background: var(--theme-hover);
+}
+
+.page-community-outreach .btn-outline {
+  background: transparent;
+  color: var(--theme-dark);
+  border: 2px solid var(--theme-primary);
+}
+
+.page-community-outreach .btn-outline:hover {
+  background: rgba(245, 236, 89, 0.15);
+}
+
+/* ================================
+   Cards / Content blocks
+   ================================ */
+
+.page-community-outreach .outreach-card {
+  background: var(--theme-surface);
+  border: 2px solid var(--theme-border);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.page-community-outreach .outreach-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(245, 236, 89, 0.18);
+}
+
+.page-community-outreach .outreach-card h3 {
+  color: var(--theme-dark);
+}
+
+.page-community-outreach .outreach-card p {
+  color: var(--theme-text);
+}
+
+/* ================================
+   Alt background sections
+   ================================ */
+
+.page-community-outreach .alt-bg {
+  background: var(--theme-surface);
+}
+
+/* ================================
+   Footer
+   ================================ */
+
+.page-community-outreach .site-footer {
+  background: var(--theme-dark);
+}
+
+.page-community-outreach .footer-section h4 {
+  color: var(--theme-primary);
+}
+
+.page-community-outreach .footer-section p,
+.page-community-outreach .footer-section ul a {
+  color: #ffffff;
+}
+
+.page-community-outreach .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+
+.page-community-outreach .footer-section p i {
+  color: var(--theme-primary);
+}
+
+.page-community-outreach .footer-bottom {
+  border-top-color: rgba(245, 236, 89, 0.25);
+}

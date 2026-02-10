@@ -9,10 +9,10 @@
   /* slightly deeper teal for hover states */
   --theme-light: #e0fafb;
   /* very light pastel teal for highlights */
-  --theme-text: #3d8682;
-  /* dark teal/greenish for readability */
-  --theme-dark: #1b8680;
-  /* deeper accent for headings/buttons */
+  --theme-text: #4b5563;
+  /* dark grey for readability */
+  --theme-dark: #1f2937;
+  /* darker grey for headings */
   --theme-bg: #f2fafa;
   /* soft off-white with teal tint for page background */
   --theme-bg-hero: #f2fafa;
@@ -95,7 +95,7 @@
 
 .btns .btn {
   background: var(--theme-primary);
-  color: #ffffff;
+  color: #1f2937;
 }
 
 .btns .btn:hover {
@@ -156,7 +156,7 @@
   top: 1.5rem;
   left: 1.5rem;
   background: var(--theme-primary);
-  color: #ffffff;
+  color: #1f2937;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   font-weight: 600;
@@ -176,7 +176,7 @@
   flex-direction: column;
   align-items: center;
   background: var(--theme-primary);
-  color: #ffffff;
+  color: #1f2937;
   width: 90px;
   padding: 1rem;
   border-radius: 12px;
@@ -261,7 +261,7 @@
 
 .page-events .btn {
   background: var(--theme-primary);
-  color: #ffffff;
+  color: #1f2937;
 }
 
 .page-events .btn:hover {
@@ -270,13 +270,13 @@
 
 .page-events .btn-outline {
   background: transparent;
-  color: var(--theme-primary);
-  border: 2px solid var(--theme-primary);
+  color: #1f2937;
+  border: 2px solid #1f2937;
 }
 
 .page-events .btn-outline:hover {
-  background: rgba(96, 90, 87, 0.15);
-  color: var(--theme-dark);
+  background: #1f2937;
+  color: #ffffff;
 }
 
 .page-events .btn-large {
@@ -318,7 +318,7 @@
 
 .detail-icon i {
   font-size: 1.8rem;
-  color: #ffffff;
+  color: #1f2937;
 }
 
 .detail-card h4 {
@@ -410,23 +410,23 @@
 
 .cta-content h2 {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: #1f2937;
   margin-bottom: 1rem;
 }
 
 .cta-content p {
   font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #4b5563;
   margin-bottom: 2rem;
 }
 
 .cta-section .btn {
-  background: #ffffff;
-  color: var(--theme-primary);
+  background: #1f2937;
+  color: #ffffff;
 }
 
 .cta-section .btn:hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: #374151;
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }

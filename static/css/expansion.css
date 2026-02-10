@@ -1,0 +1,203 @@
+/* ================================
+   Expansion Page Specific Styles
+   ================================ */
+
+.page-expansion {
+  --theme-primary: #BFD84A;   
+  --theme-hover: #D9E37A;
+  --theme-light: #EEF4C9;     
+  --theme-border: #D6DEA6;    
+  --theme-text: #5E6F2E;      
+  --theme-dark: #3E4B1A;      
+  --theme-bg: #FBFDF3;        
+  --theme-bg-hero: #F4F8E2;   
+  --theme-surface: #F0F5D8;   
+}
+
+.hero-palette-expansion {
+  background: var(--theme-bg-hero);
+}
+
+.hero-palette-expansion .blob-1,
+.hero-palette-expansion .blob-5 {
+  --blob-color: #E8F0B8;
+}
+
+.hero-palette-expansion .blob-2,
+.hero-palette-expansion .blob-6 {
+  --blob-color: #DDE8A1;
+}
+
+.hero-palette-expansion .blob-3,
+.hero-palette-expansion .blob-7 {
+  --blob-color: #C9DB78;
+}
+
+.hero-palette-expansion .blob-4,
+.hero-palette-expansion .blob-8,
+.hero-palette-expansion .blob-9 {
+  --blob-color: #BFD84A;
+}
+
+
+/* ================================
+   Navigation styles
+   ================================ */
+
+.page-expansion nav {
+  background: var(--theme-bg-hero);
+  border-bottom-color: rgba(107, 176, 166, 0.25);
+  box-shadow: 0 4px 20px rgba(107, 176, 166, 0.08);
+}
+
+.page-expansion .nav-links li > a {
+  color: var(--theme-text);
+}
+
+.page-expansion .nav-links li > a:hover {
+  color: var(--theme-primary);
+}
+
+.page-expansion .dropdown-menu {
+  background: var(--theme-bg-hero);
+  border-color: var(--theme-primary);
+}
+
+.page-expansion .dropdown-menu a {
+  color: var(--theme-text);
+}
+
+.page-expansion .dropdown-menu a:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(107, 176, 166, 0.15),
+    rgba(159, 211, 203, 0.25)
+  );
+  color: var(--theme-primary);
+}
+
+.page-expansion .dropdown > a::after {
+  border-top-color: var(--theme-primary);
+}
+
+.page-expansion .btns .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+
+.page-expansion .btns .btn:hover {
+  background: var(--theme-hover);
+}
+
+/* ================================
+   Hero text
+   ================================ */
+
+.page-expansion .hero h1 {
+  color: var(--theme-dark);
+}
+
+.page-expansion .hero-subtitle {
+  color: var(--theme-text);
+}
+
+/* ================================
+   Section titles
+   ================================ */
+
+.page-expansion .section-title {
+  color: var(--theme-primary);
+}
+
+.page-expansion .section-title::after {
+  background: linear-gradient(
+    90deg,
+    var(--theme-light),
+    var(--theme-primary)
+  );
+}
+
+/* ================================
+   Buttons
+   ================================ */
+
+.page-expansion .btn {
+  background: var(--theme-primary);
+  color: #ffffff;
+}
+
+.page-expansion .btn:hover {
+  background: var(--theme-hover);
+}
+
+.page-expansion .btn-outline {
+  background: transparent;
+  color: var(--theme-primary);
+  border: 2px solid var(--theme-primary);
+}
+
+.page-expansion .btn-outline:hover {
+  background: rgba(107, 176, 166, 0.1);
+  color: var(--theme-dark);
+}
+
+/* ================================
+   Placeholder / Coming Soon content
+   ================================ */
+
+.page-expansion .coming-soon {
+  background: var(--theme-surface);
+  border: 2px dashed var(--theme-border);
+  border-radius: 24px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.page-expansion .coming-soon h2 {
+  color: var(--theme-primary);
+  margin-bottom: 1rem;
+}
+
+.page-expansion .coming-soon p {
+  color: var(--theme-text);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ================================
+   Alt background sections
+   ================================ */
+
+.page-expansion .alt-bg {
+  background: var(--theme-surface);
+}
+
+/* ================================
+   Footer styles
+   ================================ */
+
+.page-expansion .site-footer {
+  background: var(--theme-dark);
+}
+
+.page-expansion .footer-section h4 {
+  color: var(--theme-light);
+}
+
+.page-expansion .footer-section p,
+.page-expansion .footer-section ul a {
+  color: #ffffff;
+}
+
+.page-expansion .footer-section ul a:hover {
+  color: var(--theme-light);
+}
+
+.page-expansion .footer-section p i {
+  color: var(--theme-light);
+}
+
+.page-expansion .footer-bottom {
+  border-top-color: rgba(159, 211, 203, 0.25);
+}
