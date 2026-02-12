@@ -196,6 +196,18 @@
 .page-team .team-image {
   background: linear-gradient(135deg, var(--theme-light) 0%, var(--theme-primary) 100%);
 }
+.page-team .team-image .image-placeholder {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.page-team .team-image .image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 
 /* Feature items (Community Partners) */
 .page-team .feature-item {
